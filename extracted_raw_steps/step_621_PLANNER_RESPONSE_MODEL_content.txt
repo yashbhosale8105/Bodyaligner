@@ -1,0 +1,1 @@
+I will view the second half of `extracted_sections.txt` from line 800 onwards to search for the full HTML/React contents of the `#why-choose` and `#clinic-tour` sections.

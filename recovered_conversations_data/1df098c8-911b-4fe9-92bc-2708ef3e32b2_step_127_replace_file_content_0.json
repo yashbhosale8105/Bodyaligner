@@ -1,0 +1,15 @@
+{
+  "name": "replace_file_content",
+  "args": {
+    "AllowMultiple": "false",
+    "Description": "\"Fix scope of section and tourPane variables so they are accessible inside handleWheel and handleTouchMove.\"",
+    "EndLine": "564",
+    "Instruction": "\"Move section and tourPane variable declarations to the outer useEffect scope.\"",
+    "ReplacementContent": "\"  useEffect(() => {\\n    const container = tourRef.current;\\n    if (!container) return;\\n\\n    const section = container.closest(\\\".clinic-tour\\\");\\n    const tourPane = container.closest(\\\".tour-inner\\\");\\n    if (!section || !tourPane) return;\\n\\n    const slides = Array.from(container.querySelectorAll<HTMLDivElement>(\\\".bento-item\\\"));\\n    const slideCount = slides.length;\\n    container.style.setProperty(\\\"--bento-gap\\\", \\\"1.5rem\\\");\\n\\n    const updateTourPosition = () => {\\n      if (!slides.length) return;\"",
+    "StartLine": "551",
+    "TargetContent": "\"  useEffect(() => {\\n    const container = tourRef.current;\\n    if (!container) return;\\n\\n    const slides = Array.from(container.querySelectorAll<HTMLDivElement>(\\\".bento-item\\\"));\\n    const slideCount = slides.length;\\n    container.style.setProperty(\\\"--bento-gap\\\", \\\"1.5rem\\\");\\n\\n    const updateTourPosition = () => {\\n      const section = container.closest(\\\".clinic-tour\\\");\\n      const tourPane = container.closest(\\\".tour-inner\\\");\\n      if (!section || !tourPane) return;\\n      if (!slides.length) return;\"",
+    "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\OneDrive\\\\Desktop\\\\Bodyaligner\\\\src\\\\app\\\\page.tsx\"",
+    "toolAction": "\"Fixing section scope bug in page.tsx\"",
+    "toolSummary": "\"Modify page.tsx\""
+  }
+}

@@ -1,0 +1,1 @@
+I will search `template.html` in the backup directory to see if it contains the original HTML and styling for `why-choose` and `clinic-tour`.

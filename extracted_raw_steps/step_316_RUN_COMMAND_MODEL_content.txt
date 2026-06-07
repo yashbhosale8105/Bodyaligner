@@ -1,0 +1,22 @@
+Created At: 2026-06-07T21:01:50Z
+Completed At: 2026-06-07T21:01:57Z
+
+				The command failed with exit code: 1
+				Output:
+				Traceback (most recent call last):
+  File "<string>", line 23, in <module>
+    print('Chunk:', i, 'StartLine:', chunk.get('StartLine'), 'EndLine:', chunk.get('EndLine'))
+                                     ^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+STEP: 220 TOOL: multi_replace_file_content
+Chunk: 0 StartLine: 713 EndLine: 716
+Target: '        <a href="#clinic-tour" onClick={() => setMobileMenuOpen(false)}>\n          Clinic Tour\n        </a>\n        <a href="#faq" onClick={() => setMobileMenuOpen(false)}>'
+Replacement: '        <a href="#clinic-tour" onClick={() => setMobileMenuOpen(false)}>\n          Clinic Tour\n        </a>\n        <a href="#contact" onClick={() => setMobileMenuOpen(false)}>\n          Location\n        </a>\n        <a href="#faq" onClick={() => setMobileMenuOpen(false)}>'
+Chunk: 1 StartLine: 665 EndLine: 667
+Target: '          <a href="#booking">Booking</a>\n          <a href="#clinic-tour">Clinic Tour</a>\n          <a href="#faq">FAQ</a>'
+Replacement: '          <a href="#booking">Booking</a>\n          <a href="#clinic-tour">Clinic Tour</a>\n          <a href="#contact">Location</a>\n          <a href="#faq">FAQ</a>'
+Chunk: 2 StartLine: 777 EndLine: 787
+Target: '              <Image\n                src="/assets/first.png"\n                alt="Physiotherapy Treatment"\n                fill\n                sizes="(max-width: 768px) 100vw, 900px"\n                style={{ objectFit: "contain", filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.4))" }}\n                priority\n              />\n        <div className="scroll-cue">'
+Replacement: '              <Image\n                src="/assets/first.png"\n                alt="Physiotherapy Treatment"\n                fill\n                sizes="(max-width: 768px) 100vw, 900px"\n                style={{ objectFit: "contain", filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.4))" }}\n                priority\n              />\n            </div>\n          </div>\n        </div>\n\n        <div className="scroll-cue">'
+STEP: 235 TOOL: multi_replace_file_content
+

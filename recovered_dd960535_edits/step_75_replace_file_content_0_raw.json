@@ -1,0 +1,13 @@
+{
+  "name": "replace_file_content",
+  "args": {
+    "AllowMultiple": "false",
+    "Description": "\"Fix MOVEMENT image blur by reducing the upscale multiplier to stay within native image resolution. The image is 373px tall \u2014 scaling it beyond that causes pixel blur. Also add image-rendering for crispness.\"",
+    "EndLine": "3487",
+    "Instruction": "\"Reduce movement-scale so the MOVEMENT image doesn't exceed its native resolution (373px), preventing blur. Also add image-rendering hints for sharpness.\"",
+    "ReplacementContent": "\"/* MOVEMENT letters are smaller inside the same canvas \u2014 scale up to match PAIN */\\n.hero-keyword-image.movement-keyword {\\n  --movement-scale: 1.3;\\n  flex: none;\\n  width: auto;\\n  max-width: none;\\n  height: calc(var(--keyword-height) * var(--movement-scale));\\n  max-height: 370px; /* cap at native image height to prevent upscale blur */\\n  object-fit: contain;\\n  object-position: right center;\\n  margin-block: -4rem;\\n  image-rendering: -webkit-optimize-contrast;\\n  image-rendering: crisp-edges;\\n}\"",
+    "StartLine": "3476",
+    "TargetContent": "\"/* MOVEMENT letters are smaller inside the same canvas \u2014 scale up to match PAIN */\\n.hero-keyword-image.movement-keyword {\\n  --movement-scale: 1.75;\\n  flex: none;\\n  width: auto;\\n  max-width: none;\\n  height: calc(var(--keyword-height) * var(--movement-scale));\\n  max-height: none;\\n  object-fit: contain;\\n  object-position: right center;\\n  margin-block: -7.8rem;\\n}\"",
+    "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\OneDrive\\\\Desktop\\\\Bodyaligner\\\\src\\\\app\\\\globals.css\""
+  }
+}

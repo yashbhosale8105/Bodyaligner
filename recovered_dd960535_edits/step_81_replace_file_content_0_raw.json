@@ -1,0 +1,15 @@
+{
+  "name": "replace_file_content",
+  "args": {
+    "AllowMultiple": "false",
+    "Description": "\"Restore MOVEMENT image to original large scale (1.75) while keeping sharpness improvements via CSS rendering hints and filter.\"",
+    "EndLine": "3488",
+    "Instruction": "\"Restore movement-scale to 1.75 and max-height to none. Keep image-rendering crisp hints and add a contrast/sharpness filter to combat the softness from upscaling.\"",
+    "ReplacementContent": "\"/* MOVEMENT letters are smaller inside the same canvas \u2014 scale up to match PAIN */\\n.hero-keyword-image.movement-keyword {\\n  --movement-scale: 1.75;\\n  flex: none;\\n  width: auto;\\n  max-width: none;\\n  height: calc(var(--keyword-height) * var(--movement-scale));\\n  max-height: none;\\n  object-fit: contain;\\n  object-position: right center;\\n  margin-block: -7.8rem;\\n  image-rendering: -webkit-optimize-contrast;\\n  filter: contrast(1.08) sharpen(0.3);\\n}\"",
+    "StartLine": "3476",
+    "TargetContent": "\"/* MOVEMENT letters are smaller inside the same canvas \u2014 scale up to match PAIN */\\n.hero-keyword-image.movement-keyword {\\n  --movement-scale: 1.3;\\n  flex: none;\\n  width: auto;\\n  max-width: none;\\n  height: calc(var(--keyword-height) * var(--movement-scale));\\n  max-height: 370px; /* cap at native image height to prevent upscale blur */\\n  object-fit: contain;\\n  object-position: right center;\\n  margin-block: -4rem;\\n  image-rendering: -webkit-optimize-contrast;\\n  image-rendering: crisp-edges;\\n}\"",
+    "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\OneDrive\\\\Desktop\\\\Bodyaligner\\\\src\\\\app\\\\globals.css\"",
+    "toolAction": "\"Restoring MOVEMENT image scale while keeping sharpness fix\"",
+    "toolSummary": "\"Restore movement size with sharpness\""
+  }
+}

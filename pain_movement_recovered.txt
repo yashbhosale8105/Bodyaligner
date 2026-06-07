@@ -1,0 +1,1012 @@
+
+========================================================================
+OCCURRENCE 1 | CONV: 1df098c8-911b-4fe9-92bc-2708ef3e32b2 | STEP: 21 | TYPE: content
+========================================================================
+Created At: 2026-06-07T11:36:32Z
+Completed At: 2026-06-07T11:36:32Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/src/app/page.tsx`
+Total Lines: 1957
+Total Bytes: 84564
+Showing lines 800 to 1599
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+800: 
+801:       {/* ============ HERO ============ */}
+802:       <header className="hero" id="top" data-screen-label="Hero">
+803:         <div className="hero-bg"></div>
+804:         <div className="hero-blob"></div>
+805:         <div className="hero-grain"></div>
+806:         <div className="hero-vignette"></div>
+807: 
+808:         <div className="hero-inner">
+809:           <div className="hero-top-row">
+810:             <div className="hero-text-content">
+811:               <h1 className="hero-massive-title">
+812:                 <span className="title-line" style={{ animationDelay: "0.1s" }}>
+813:                   RELIEF FROM <em className="text-gradient-glow">PAIN.</em>
+814:                 </span>
+815:                 <span className="title-line" style={{ animationDelay: "0.3s" }}>
+816:                   RESTORE <em className="text-gradient-glow">MOVEMENT.</em>
+817:                 </span>
+818:               </h1>
+819:               <p className="lead hero-lead-anim">
+820:                 Advanced physiotherapy and chiropractic care for back pain, neck pain, joint pain, posture issues, and sports injuries. Get perfectly aligned by Dr. Kunal Mahalle.
+821:               </p>
+822:               <div className="hero-actions hero-actions-anim">
+823:                 <a href="tel:+917218818815" className="btn btn-primary btn-large">
+824:                   <i className="fas fa-phone" style={{ marginRight: "8px" }}></i> Call Now
+825:                 </a>
+826:                 <a href="#booking" className="btn btn-accent btn-large">
+827:                   Book Appointme
+<truncated 39440 bytes>
+v>
+1564:         </div>
+1565:       </section>
+1566: 
+1567:       {/* ============ PRICING ============ */}
+1568:       <section className="section" id="pricing" data-screen-label="Pricing">
+1569:         <div className="wrap">
+1570:           <div className="sec-head">
+1571:             <div>
+1572:               <div className="eyebrow reveal">Clear pricing</div>
+1573:               <h2 className="reveal">Simple plans, no hidden fees</h2>
+1574:             </div>
+1575:             <p className="lead reveal" style={{ maxWidth: "48ch" }}>
+1576:               Pay per session or opt for package savings. Every plan includes assessment and active recovery tracking support.
+1577:             </p>
+1578:           </div>
+1579:           <div className="price-grid" data-stagger="">
+1580:             {PRICING_PLANS.map((plan, i) => (
+1581:               <article key={i} className={`price spotlight-card ${plan.featured ? "feat" : ""}`} onMouseMove={handleMouseMove}>
+1582:                 {plan.featured && <span className="tag-feat">Most popular</span>}
+1583:                 <h3>{plan.title}</h3>
+1584:                 <p className="desc">{plan.desc}</p>
+1585:                 <div className="amt">
+1586:                   {plan.price}
+1587:                   <small>{plan.unit}</small>
+1588:                 </div>
+1589:                 <ul>
+1590:                   {plan.features.map((feat, fi) => (
+1591:                     <li key={fi}>
+1592:                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+1593:                         <path d="M5 12l5 5L20 7" />
+1594:                       </svg>{" "}
+1595:                       {feat}
+1596:                     </li>
+1597:                   ))}
+1598:                 </ul>
+1599:                 <a href="#booking" className={`btn ${plan.featured ? "btn-accent" : "btn-ghost"}`}>
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+
+
+========================================================================
+OCCURRENCE 2 | CONV: 1df098c8-911b-4fe9-92bc-2708ef3e32b2 | STEP: 29 | TYPE: content
+========================================================================
+Created At: 2026-06-07T11:36:48Z
+Completed At: 2026-06-07T11:36:48Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/src/app/globals.css`
+Total Lines: 3517
+Total Bytes: 60957
+Showing lines 1 to 800
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: /* ============================================================
+2:    BodyAligner — Physiotherapy Clinic
+3:    Warm & human wellness · deep teal / mint / cream
+4:    ============================================================ */
+5: 
+6: :root {
+7:   /* typography from Next.js google fonts */
+8:   --serif: var(--font-serif), 'Spectral', Georgia, serif;
+9:   --sans: var(--font-sans), 'Poppins', system-ui, sans-serif;
+10: 
+11:   /* palette */
+12:   --ink: #ffffff;
+13:   /* Pure White (Secondary Text) */
+14:   --ink-soft: #94a3b8;
+15:   /* Light Slate Gray for sub-elements */
+16:   --mint: #0083CA;
+17:   /* Bright Blue (Primary) */
+18:   --mint-deep: #006CA6;
+19:   /* Deeper Primary Blue */
+20:   --cream: #000000;
+21:   /* Pure Black Background */
+22:   --cream-2: #090d16;
+23:   /* Rich dark navy-black background */
+24:   --paper: #05080f;
+25:   /* Near-black background for cards */
+26:   --clay: #BB6801;
+27:   /* Amber / Gold (Tertiary) */
+28:   --clay-soft: #d97706;
+29:   --sand: #1e293b;
+30:   /* Dark slate borders */
+31:   --line: rgba(255, 255, 255, 0.12);
+32:   --line-2: rgba(255, 255, 255, 0.08);
+33: 
+34:   /* type */
+35:   /* --serif and --sans are defined above to use Next.js local variables */
+36: 
+37:   /* motion */
+38:   --ease: cubic-bezier(.22, .61, .36, 1);
+39:   --ease-out: cubic-bezier(.16, 1, .3, 1);
+40:   --reveal-y: 36px;
+41:   --reveal-dur: .9s;
+42: 
+43:   /* shape */
+44:   --r-sm: 10px;
+45:   --r: 18px;
+46:   --r-lg: 28px;
+47:   --r-xl: 40px;
+48:   --shadow: 0 24px 60px -28px rgba(29, 58, 138, .25);
+49:   --shadow-soft: 0 12px 40px -22px rgba(2
+<truncated 15510 bytes>
+60px) {
+726:   .hero-meta {
+727:     display: none;
+728:   }
+729: }
+730: 
+731: .text-gradient-glow {
+732:   background: linear-gradient(90deg, #00f2fe, #4facfe, #00f2fe);
+733:   background-size: 200% auto;
+734:   -webkit-background-clip: text;
+735:   -webkit-text-fill-color: transparent;
+736:   text-shadow: 0 0 40px rgba(0, 242, 254, 0.5);
+737:   display: inline-block;
+738:   padding-right: 0.1em;
+739:   animation: textShine 3s linear infinite;
+740: }
+741: @keyframes textShine {
+742:   to {
+743:     background-position: 200% center;
+744:   }
+745: }
+746: .eyebrow-pill {
+747:   display: inline-flex;
+748:   align-items: center;
+749:   gap: 0.5em;
+750:   font-size: 0.85rem;
+751:   font-weight: 600;
+752:   letter-spacing: 0.1em;
+753:   text-transform: uppercase;
+754:   color: #00f2fe;
+755:   background: rgba(0, 242, 254, 0.1);
+756:   border: 1px solid rgba(0, 242, 254, 0.2);
+757:   padding: 0.6em 1.2em;
+758:   border-radius: 100px;
+759:   backdrop-filter: blur(8px);
+760:   box-shadow: 0 0 20px rgba(0, 242, 254, 0.1);
+761: }
+762: .eyebrow-pill::before {
+763:   content: "";
+764:   width: 8px;
+765:   height: 8px;
+766:   background: #00f2fe;
+767:   border-radius: 50%;
+768:   box-shadow: 0 0 10px #00f2fe;
+769: }
+770: 
+771: .hero-play {
+772:   display: inline-flex;
+773:   align-items: center;
+774:   gap: 12px;
+775:   margin-top: 30px;
+776:   color: #fff;
+777:   font-weight: 500;
+778: }
+779: 
+780: .hero-play .pp {
+781:   width: 54px;
+782:   height: 54px;
+783:   border-radius: 50%;
+784:   border: 1.5px solid rgba(255, 255, 255, .5);
+785:   display: grid;
+786:   place-items: center;
+787:   transition: .4s var(--ease-out);
+788: }
+789: 
+790: .hero-play:hover .pp {
+791:   background: #fff;
+792:   transform: scale(1.06);
+793: }
+794: 
+795: .hero-play:hover .pp svg {
+796:   fill: var(--ink);
+797: }
+798: 
+799: .hero-play .pp svg {
+800:   width: 16px;
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+
+
+========================================================================
+OCCURRENCE 3 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 40 | TYPE: content
+========================================================================
+Created At: 2026-06-07T00:14:19Z
+Completed At: 2026-06-07T00:14:20Z
+The following changes were made by the multi_replace_file_content tool to: c:\Users\ASUS\OneDrive\Desktop\Bodyaligner\src\app\globals.css. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -87,8 +87,8 @@
+ .btn svg{ width:1.1em; height:1.1em; }
+ .btn-primary{ background:var(--ink); color:var(--cream); box-shadow:var(--shadow-soft); }
+ .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 22px 44px -20px rgba(29, 58, 138,.45); }
+-.btn-accent{ background:var(--clay); color:#fff; box-shadow:0 14px 30px -16px rgba(187, 104, 1,.45); }
+-.btn-accent:hover{ transform:translateY(-3px); }
++.btn-accent{ background:#ccff00; color:#000; box-shadow:0 14px 30px -16px rgba(204, 255, 0, 0.5); }
++.btn-accent:hover{ transform:translateY(-3px); box-shadow:0 20px 40px -16px rgba(204, 255, 0, 0.6); }
+ .btn-ghost{ background:transparent; color:var(--ink); border:1.5px solid var(--line); }
+ .btn-ghost:hover{ background:var(--ink); color:var(--cream); border-color:var(--ink); }
+ .btn-light{ background:rgba(255,255,255,.14); color:#fff; border:1.5px solid rgba(255,255,255,.4); backdrop-filter:blur(8px); }
+@@ -210,10 +210,42 @@
+ .hero-vignette{ position:absolute; inset:0; z-index:-1; background:linear-gradient(180deg,rgba(0,0,0,.3) 0%,transparent 30%,transparent 55%,rgba(0,0,0,.7) 100%); }
+ 
+ .hero-inner{ width:100%; max-width:1440px; margin-inline:auto; padding:130px var(--gut) clamp(54px,9vh,110px); }
+-.hero h1{ font-size:clamp(2.9rem,7.4vw,6.7rem); line-height:.98; font-weight:500; max-width:20ch; margin-inline:auto; letter-spacing:-.02em; text-align:center; }
+-.hero h1 em{ font-style:italic; color:inherit; }
++.hero h1{ font-size:clamp(3.5rem,7.4vw,7.5rem); line-height:1.1; font-weight:700; font-family:var(--sans); max-width:20ch; margin-inline:auto; letter-spacing:-.03em; text-align:center; text-shadow: 0 4px 24px rgba(0,0,0,0.5); }
++.hero h1 em{ font-style:italic; font-family:var(--serif); font-weight:600; }
+ .hero h1 .word{ display:inline-block; opacity:0; transform:translateY(0.35em); filter:blur(5px); animation:revealWord 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+ @keyframes revealWord { to { opacity:1; transform:translateY(0); filter:blur(0); } }
++.text-gradient-glow {
++  background: linear-gradient(to right, #ccff00, #9dff00);
++  -webkit-background-clip: text;
++  -webkit-text-fill-color: transparent;
++  text-shadow: 0 0 40px rgba(204, 255, 0, 0.4);
++  display: inline-block;
++  padding-right: 0.1em;
++}
++.eyebrow-pill {
++  display: inline-flex;
++  align-items: center;
++  gap: 0.5em;
++  font-size: 0.85rem;
++  font-weight: 600;
++  letter-spacing: 0.1em;
++  text-transform: uppercase;
++  color: #ccff00;
++  background: rgba(204, 255, 0, 0.1);
++  border: 1px solid rgba(204, 255, 0, 0.2);
++  padding: 0.6em 1.2em;
++  border-radius: 100px;
++  backdrop-filter: blur(8px);
++  box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);
++}
++.eyebrow-pill::before {
++  content: "";
++  width: 8px;
++  height: 8px;
++  background: #ccff00;
++  border-radius: 50%;
++  box-shadow: 0 0 10px #ccff00;
++}
+ .hero .lead{ color:rgba(255,255,255,.86); margin-top:26px; max-width:52ch; font-size:clamp(1.05rem,1.5vw,1.3rem); margin-inline:auto; }
+ .hero-actions{ display:flex; flex-wrap:wrap; gap:16px; margin-top:38px; justify-content:center; }
+ .hero-top-row{ display:flex; flex-direction:column; align-items:center; gap:48px; text-align:center; }
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.
+
+========================================================================
+OCCURRENCE 4 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 56 | TYPE: content
+========================================================================
+Created At: 2026-06-07T00:16:45Z
+Completed At: 2026-06-07T00:17:05Z
+The following changes were made by the multi_replace_file_content tool to: c:\Users\ASUS\OneDrive\Desktop\Bodyaligner\src\app\globals.css. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -178,9 +178,9 @@
+ }
+ 
+ .btn-accent {
+-  background: var(--clay);
+-  color: #fff;
+-  box-shadow: 0 14px 30px -16px rgba(187, 104, 1, .45);
++  background: #00f2fe;
++  color: #000;
++  box-shadow: 0 14px 30px -16px rgba(0, 242, 254, 0.5);
+ }
+ 
+ .btn-accent:hover {
+@@ -187,3 +187,4 @@
++  box-shadow: 0 20px 40px -16px rgba(0, 242, 254, 0.6);
+ }
+ 
+ .btn-ghost {
+@@ -701,6 +701,39 @@
+   }
+ }
+ 
++.text-gradient-glow {
++  background: linear-gradient(to right, #00f2fe, #4facfe);
++  -webkit-background-clip: text;
++  -webkit-text-fill-color: transparent;
++  text-shadow: 0 0 40px rgba(0, 242, 254, 0.4);
++  display: inline-block;
++  padding-right: 0.1em;
++}
++.eyebrow-pill {
++  display: inline-flex;
++  align-items: center;
++  gap: 0.5em;
++  font-size: 0.85rem;
++  font-weight: 600;
++  letter-spacing: 0.1em;
++  text-transform: uppercase;
++  color: #00f2fe;
++  background: rgba(0, 242, 254, 0.1);
++  border: 1px solid rgba(0, 242, 254, 0.2);
++  padding: 0.6em 1.2em;
++  border-radius: 100px;
++  backdrop-filter: blur(8px);
++  box-shadow: 0 0 20px rgba(0, 242, 254, 0.1);
++}
++.eyebrow-pill::before {
++  content: "";
++  width: 8px;
++  height: 8px;
++  background: #00f2fe;
++  border-radius: 50%;
++  box-shadow: 0 0 10px #00f2fe;
++}
++
+ .hero-play {
+   display: inline-flex;
+   align-items: center;
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.
+
+We did our best to apply changes despite some inaccuracies. Double check if the edit applied is what you intended.
+
+========================================================================
+OCCURRENCE 5 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 64 | TYPE: content
+========================================================================
+Created At: 2026-06-07T00:18:16Z
+Completed At: 2026-06-07T00:18:17Z
+The following changes were made by the multi_replace_file_content tool to: c:\Users\ASUS\OneDrive\Desktop\Bodyaligner\src\app\globals.css. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -705,12 +705,19 @@
+ }
+ 
+ .text-gradient-glow {
+-  background: linear-gradient(to right, #00f2fe, #4facfe);
++  background: linear-gradient(90deg, #00f2fe, #4facfe, #00f2fe);
++  background-size: 200% auto;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+-  text-shadow: 0 0 40px rgba(0, 242, 254, 0.4);
++  text-shadow: 0 0 40px rgba(0, 242, 254, 0.5);
+   display: inline-block;
+   padding-right: 0.1em;
++  animation: textShine 3s linear infinite;
++}
++@keyframes textShine {
++  to {
++    background-position: 200% center;
++  }
+ }
+ .eyebrow-pill {
+   display: inline-flex;
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.
+
+========================================================================
+OCCURRENCE 6 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 187 | TYPE: tool_arg:multi_replace_file_content:ReplacementChunks
+========================================================================
+[{"AllowMultiple":false,"EndLine":771,"ReplacementContent":"        <div className=\"hero-inner\">\n          <div className=\"hero-top-row\">\n            <div className=\"hero-text-content\">\n              <h1 className=\"hero-massive-title\">\n                <span className=\"title-line\" style={{ animationDelay: \"0.1s\" }}>\n                  RELIEF FROM <em className=\"text-gradient-glow\">PAIN.</em>\n                </span>\n                <span className=\"title-line\" style={{ animationDelay: \"0.3s\" }}>\n                  RESTORE <em className=\"text-gradient-glow\">MOVEMENT.</em>\n                </span>\n              </h1>\n              <p className=\"lead hero-lead-anim\">\n                Advanced physiotherapy and chiropractic care for back pain, neck pain, joint pain, posture issues, and sports injuries. Get perfectly aligned by Dr. Kunal Mahalle.\n              </p>\n              <div className=\"hero-actions hero-actions-anim\">\n                <a href=\"#booking\" className=\"btn btn-accent btn-large\">\n                  Book Appointment\n                  <i className=\"fas fa-arrow-right\" style={{ marginLeft: \"8px\" }}></i>\n                </a>\n                <a href=\"https://wa.me/917218818815\" target=\"_blank\" className=\"btn btn-light btn-large\">\n                  <i className=\"fab fa-whatsapp\" style={{ marginRight: \"8px\" }}></i> WhatsApp Us\n                </a>\n              </div>\n            </div>\n\n            {/* Hero Image Overlay with Floating Elements */}\n            <div className=\"hero-image-wrap hero-image-anim\">\n              <div className=\"hero-image-glow-orb\"></div>\n              \n              {/* Floating Glassmorphic Badges */}\n              <div className=\"glass-badge badge-left\">\n                <div className=\"badge-icon\"><i className=\"fas fa-star\" style={{ color: \"#ffd700\" }}></i></div>\n                <div className=\"badge-text\">\n                  <strong>4.9/5 Rating</strong>\n                  <span>1000+ Reviews</s
+<truncated 3306 bytes>
+
+========================================================================
+OCCURRENCE 7 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 188 | TYPE: content
+========================================================================
+Created At: 2026-06-07T00:30:41Z
+Completed At: 2026-06-07T00:30:56Z
+The following changes were made by the multi_replace_file_content tool to: c:\Users\ASUS\OneDrive\Desktop\Bodyaligner\src\app\page.tsx. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -730,33 +730,50 @@
+ 
+         <div className="hero-inner">
+           <div className="hero-top-row">
+-            <div>
+-              <h1 style={{ color: "#ffffff" }}>
+-                <span className="word" style={{ animationDelay: "0.1s" }}>Relief</span>{" "}
+-                <span className="word" style={{ animationDelay: "0.2s" }}>from</span>{" "}
+-                <span className="word" style={{ animationDelay: "0.3s" }}><em className="text-gradient-glow">Pain</em>.</span>
+-                <br/>
+-                <span className="word" style={{ animationDelay: "0.5s" }}>Restore</span>{" "}
+-                <span className="word" style={{ animationDelay: "0.6s" }}><em className="text-gradient-glow">Movement</em>.</span>
++            <div className="hero-text-content">
++              <h1 className="hero-massive-title">
++                <span className="title-line" style={{ animationDelay: "0.1s" }}>
++                  RELIEF FROM <em className="text-gradient-glow">PAIN.</em>
++                </span>
++                <span className="title-line" style={{ animationDelay: "0.3s" }}>
++                  RESTORE <em className="text-gradient-glow">MOVEMENT.</em>
++                </span>
+               </h1>
+               <p className="lead hero-lead-anim">
+-                Physiotherapy and chiropractic care for back pain, neck pain, joint pain, posture issues, and sports injuries. Get aligned by Dr Kunal Mahalle.
++                Advanced physiotherapy and chiropractic care for back pain, neck pain, joint pain, posture issues, and sports injuries. Get perfectly aligned by Dr. Kunal Mahalle.
+               </p>
+               <div className="hero-actions hero-actions-anim">
+-              
+<truncated 1269 bytes>
+         {/* Floating Glassmorphic Badges */}
++              <div className="glass-badge badge-left">
++                <div className="badge-icon"><i className="fas fa-star" style={{ color: "#ffd700" }}></i></div>
++                <div className="badge-text">
++                  <strong>4.9/5 Rating</strong>
++                  <span>1000+ Reviews</span>
++                </div>
++              </div>
++              
++              <div className="glass-badge badge-right">
++                <div className="badge-icon"><i className="fas fa-person-running" style={{ color: "var(--mint)" }}></i></div>
++                <div className="badge-text">
++                  <strong>2000+</strong>
++                  <span>Recoveries</span>
++                </div>
++              </div>
++
+               <Image
+                 src="/assets/first.png"
+                 alt="Physiotherapy Treatment"
+@@ -763,17 +763,7 @@
+-                sizes="(max-width: 768px) 100vw, 800px"
+-                style={{ objectFit: "contain" }}
++                sizes="(max-width: 768px) 100vw, 900px"
++                style={{ objectFit: "contain", filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.4))" }}
+                 priority
+               />
+-              <div className="split-fig hero-badge-override">
+-                <div className="n" style={{ color: "var(--ink)" }}>
+-                  <Counter value={2} suffix="+" />
+-                </div>
+-                <div className="l">Years Experience in Spinal Adjustments</div>
+-              </div>
+-            </div>
+-          </div>
+-        </div>
+-
+         <div className="scroll-cue">
+           <span className="bar"></span>Scroll
+         </div>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.
+
+We did our best to apply changes despite some inaccuracies. Double check if the edit applied is what you intended.
+
+========================================================================
+OCCURRENCE 8 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 227 | TYPE: content
+========================================================================
+Created At: 2026-06-07T00:41:02Z
+Completed At: 2026-06-07T00:41:03Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/src/app/page.tsx`
+Total Lines: 1889
+Total Bytes: 82141
+Showing lines 725 to 760
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+725:         </a>
+726:       </div>
+727: 
+728:       {/* ============ HERO ============ */}
+729:       <header className="hero" id="top" data-screen-label="Hero">
+730:         <div className="hero-bg"></div>
+731:         <div className="hero-blob"></div>
+732:         <div className="hero-grain"></div>
+733:         <div className="hero-vignette"></div>
+734: 
+735:         <div className="hero-inner">
+736:           <div className="hero-top-row">
+737:             <div className="hero-text-content">
+738:               <h1 className="hero-massive-title">
+739:                 <span className="title-line" style={{ animationDelay: "0.1s" }}>
+740:                   RELIEF FROM <em className="text-gradient-glow">PAIN.</em>
+741:                 </span>
+742:                 <span className="title-line" style={{ animationDelay: "0.3s" }}>
+743:                   RESTORE <em className="text-gradient-glow">MOVEMENT.</em>
+744:                 </span>
+745:               </h1>
+746:               <p className="lead hero-lead-anim">
+747:                 Advanced physiotherapy and chiropractic care for back pain, neck pain, joint pain, posture issues, and sports injuries. Get perfectly aligned by Dr. Kunal Mahalle.
+748:               </p>
+749:               <div className="hero-actions hero-actions-anim">
+750:                 <a href="#booking" className="btn btn-accent btn-large">
+751:                   Book Appointment
+752:                   <i className="fas fa-arrow-right" style={{ marginLeft: "8px" }}></i>
+753:                 </a>
+754:                 <a href="https://wa.me/917218818815" target="_blank" className="btn btn-light btn-large">
+755:                   <i className="fab fa-whatsapp" style={{ marginRight: "8px" }}></i> WhatsApp Us
+756:                 </a>
+757:               </div>
+758:             </div>
+759: 
+760:             {/* Hero Image Overlay with Floating Elements */}
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+
+
+========================================================================
+OCCURRENCE 9 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 235 | TYPE: tool_arg:multi_replace_file_content:ReplacementChunks
+========================================================================
+[{"AllowMultiple":false,"EndLine":756,"ReplacementContent":"              <h1 className=\"hero-massive-title\">\n                <span className=\"title-line\" style={{ animationDelay: \"0.1s\" }}>\n                  Relief from <em className=\"text-gradient-glow\">PAIN.</em>\n                </span>\n                <span className=\"title-line\" style={{ animationDelay: \"0.3s\" }}>\n                  Restore <em className=\"text-gradient-glow\">MOVEMENT.</em>\n                </span>\n              </h1>\n              <p className=\"hero-subheading hero-lead-anim\">\n                Expert chiropractic &amp; physiotherapy for back pain, neck stiffness, joint issues, and sports injuries. Led by Dr. Kunal Mahalle.\n              </p>\n              <div className=\"hero-actions hero-actions-anim\">\n                <a href=\"#booking\" className=\"btn btn-accent btn-large\">\n                  Book Appointment\n                  <i className=\"fas fa-arrow-right\" style={{ marginLeft: \"8px\" }}></i>\n                </a>\n                <a href=\"https://wa.me/917218818815\" target=\"_blank\" className=\"btn btn-light btn-large\">\n                  <i className=\"fab fa-whatsapp\" style={{ marginRight: \"8px\" }}></i> WhatsApp Us\n                </a>\n              </div>","StartLine":738,"TargetContent":"              <h1 className=\"hero-massive-title\">\n                <span className=\"title-line\" style={{ animationDelay: \"0.1s\" }}>\n                  RELIEF FROM <em className=\"text-gradient-glow\">PAIN.</em>\n                </span>\n                <span className=\"title-line\" style={{ animationDelay: \"0.3s\" }}>\n                  RESTORE <em className=\"text-gradient-glow\">MOVEMENT.</em>\n                </span>\n              </h1>\n              <p className=\"lead hero-lead-anim\">\n                Advanced physiotherapy and chiropractic care for back pain, neck pain, joint pain, posture issues, and sports injuries. Get perfectly aligned by Dr. Kunal Mahalle.\n              </p>\n       
+<truncated 547 bytes>
+
+========================================================================
+OCCURRENCE 10 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 236 | TYPE: content
+========================================================================
+Created At: 2026-06-07T00:41:31Z
+Completed At: 2026-06-07T00:41:34Z
+The following changes were made by the multi_replace_file_content tool to: c:\Users\ASUS\OneDrive\Desktop\Bodyaligner\src\app\page.tsx. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -737,14 +737,14 @@
+             <div className="hero-text-content">
+               <h1 className="hero-massive-title">
+                 <span className="title-line" style={{ animationDelay: "0.1s" }}>
+-                  RELIEF FROM <em className="text-gradient-glow">PAIN.</em>
++                  Relief from <em className="text-gradient-glow">PAIN.</em>
+                 </span>
+                 <span className="title-line" style={{ animationDelay: "0.3s" }}>
+-                  RESTORE <em className="text-gradient-glow">MOVEMENT.</em>
++                  Restore <em className="text-gradient-glow">MOVEMENT.</em>
+                 </span>
+               </h1>
+-              <p className="lead hero-lead-anim">
+-                Advanced physiotherapy and chiropractic care for back pain, neck pain, joint pain, posture issues, and sports injuries. Get perfectly aligned by Dr. Kunal Mahalle.
++              <p className="hero-subheading hero-lead-anim">
++                Expert chiropractic &amp; physiotherapy for back pain, neck stiffness, joint issues, and sports injuries. Led by Dr. Kunal Mahalle.
+               </p>
+               <div className="hero-actions hero-actions-anim">
+                 <a href="#booking" className="btn btn-accent btn-large">
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.
+
+========================================================================
+OCCURRENCE 11 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 318 | TYPE: content
+========================================================================
+Created At: 2026-06-07T21:02:00Z
+Completed At: 2026-06-07T21:02:20Z
+
+				The command completed successfully.
+				Output:
+				STEP: 220 TOOL: multi_replace_file_content
+Chunk: 0 StartLine: 713 EndLine: 716
+Target: '        <a href="#clinic-tour" onClick={() => setMobileMenuOpen(false)}>\n          Clinic Tour\n        </a>\n        <a href="#faq" onClick={() => setMobileMenuOpen(false)}>'
+Replacement: '        <a href="#clinic-tour" onClick={() => setMobileMenuOpen(false)}>\n          Clinic Tour\n        </a>\n        <a href="#contact" onClick={() => setMobileMenuOpen(false)}>\n          Location\n        </a>\n        <a href="#faq" onClick={() => setMobileMenuOpen(false)}>'
+Chunk: 1 StartLine: 665 EndLine: 667
+Target: '          <a href="#booking">Booking</a>\n          <a href="#clinic-tour">Clinic Tour</a>\n          <a href="#faq">FAQ</a>'
+Replacement: '          <a href="#booking">Booking</a>\n          <a href="#clinic-tour">Clinic Tour</a>\n          <a href="#contact">Location</a>\n          <a href="#faq">FAQ</a>'
+Chunk: 2 StartLine: 777 EndLine: 787
+Target: '              <Image\n                src="/assets/first.png"\n                alt="Physiotherapy Treatment"\n                fill\n                sizes="(max-width: 768px) 100vw, 900px"\n                style={{ objectFit: "contain", filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.4))" }}\n                priority\n              />\n        <div className="scroll-cue">'
+Replacement: '              <Image\n                src="/assets/first.png"\n                alt="Physiotherapy Treatment"\n                fill\n                sizes="(max-width: 768px) 100vw, 900px"\n                style={{ objectFit: "contain", filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.4))" }}\n                priority\n              />\n            </div>\n          </div>\n        </div>\n\n        <div className="scroll-cue">'
+STEP: 235 TOOL: multi_replace_file_content
+Failed parsing chunks str: Invalid control character at: line 1 column 2049 (char 2048)
+Ra
+<truncated 182 bytes>
+yle={{ animationDelay: \\"0.1s\\" }}>\\n                  Relief from <em className=\\"text-gradient-glow\\">PAIN.</em>\\n                </span>\\n                <span className=\\"title-line\\" style={{ animationDelay: \\"0.3s\\" }}>\\n                  Restore <em className=\\"text-gradient-glow\\">MOVEMENT.</em>\\n                </span>\\n              </h1>\\n              <p className=\\"hero-subheading hero-lead-anim\\">\\n                Expert chiropractic &amp; physiotherapy for back pain, neck stiffness, joint issues, and sports injuries. Led by Dr. Kunal Mahalle.\\n              </p>\\n              <div className=\\"hero-actions hero-actions-anim\\">\\n                <a href=\\"#booking\\" className=\\"btn btn-accent btn-large\\">\\n                  Book Appointment\\n                  <i className=\\"fas fa-arrow-right\\" style={{ marginLeft: \\"8px\\" }}></i>\\n                </a>\\n                <a href=\\"https://wa.me/917218818815\\" target=\\"_blank\\" className=\\"btn btn-light btn-large\\">\\n                  <i className=\\"fab fa-whatsapp\\" style={{ marginRight: \\"8px\\" }}></i> WhatsApp Us\\n                </a>\\n              </div>","StartLine":738,"TargetContent":"              <h1 className=\\"hero-massive-title\\">\\n                <span className=\\"title-line\\" style={{ animationDelay: \\"0.1s\\" }}>\\n                  RELIEF FROM <em className=\\"text-gradient-glow\\">PAIN.</em>\\n                </span>\\n                <span className=\\"title-line\\" style={{ animationDelay: \\"0.3s\\" }}>\\n                  RESTORE <em className=\\"text-gradient-glow\\">MOVEMENT.</em>\\n                </span>\\n              </h1>\\n              <p className=\\"lead hero-lead-anim\\">\\n                Advanced physiotherapy and chiropractic care for back pain, neck pain, joint pain, posture issues, and sports injuries. Get perfectly aligned by Dr. Kunal Mahalle.\\n              </p>\\n       \n<truncated 547 bytes>'
+STEP: 235 TOOL: grep_search
+STEP: 235 TOOL: run_command
+
+
+
+========================================================================
+OCCURRENCE 12 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 324 | TYPE: content
+========================================================================
+Created At: 2026-06-07T21:02:39Z
+Completed At: 2026-06-07T21:02:54Z
+
+				The command completed successfully.
+				Output:
+				ARGS KEYS: dict_keys(['Description', 'Instruction', 'ReplacementChunks', 'TargetFile', 'toolAction', 'toolSummary'])
+ARGS CONTENT: {'Description': '"Update the hero text copy and HTML structure based on the specific redesign instructions."', 'Instruction': '"Update the hero-massive-title to use the exact requested copy and casing, and add the hero-subheading class to the paragraph."', 'ReplacementChunks': '[{"AllowMultiple":false,"EndLine":756,"ReplacementContent":"              <h1 className=\\"hero-massive-title\\">\\n                <span className=\\"title-line\\" style={{ animationDelay: \\"0.1s\\" }}>\\n                  Relief from <em className=\\"text-gradient-glow\\">PAIN.</em>\\n                </span>\\n                <span className=\\"title-line\\" style={{ animationDelay: \\"0.3s\\" }}>\\n                  Restore <em className=\\"text-gradient-glow\\">MOVEMENT.</em>\\n                </span>\\n              </h1>\\n              <p className=\\"hero-subheading hero-lead-anim\\">\\n                Expert chiropractic &amp; physiotherapy for back pain, neck stiffness, joint issues, and sports injuri
+ARGS KEYS: dict_keys(['CaseInsensitive', 'MatchPerLine', 'Query', 'SearchPath', 'toolAction', 'toolSummary'])
+ARGS CONTENT: {'CaseInsensitive': 'true', 'MatchPerLine': 'true', 'Query': '"glimpse"', 'SearchPath': '"c:\\\\Users\\\\ASUS\\\\OneDrive\\\\Desktop\\\\Bodyaligner\\\\src"', 'toolAction': '"Searching src"', 'toolSummary': '"Finding clinic tour text"'}
+ARGS KEYS: dict_keys(['CommandLine', 'Cwd', 'WaitMsBeforeAsync', 'toolAction', 'toolSummary'])
+ARGS CONTENT: {'CommandLine': '"git status"', 'Cwd': '"c:\\\\Users\\\\ASUS\\\\OneDrive\\\\Desktop\\\\Bodyaligner"', 'WaitMsBeforeAsync': '2000', 'toolAction': '"Running git status"', 'toolSummary': '"Running git status"'}
+
+
+
+========================================================================
+OCCURRENCE 13 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 328 | TYPE: content
+========================================================================
+Created At: 2026-06-07T21:03:07Z
+Completed At: 2026-06-07T21:03:10Z
+
+				The command completed successfully.
+				Output:
+				<truncated 12 lines>
+NEXT NEXT:
+{"step_index":236,"source":"MODEL","type":"CODE_ACTION","status":"DONE","created_at":"2026-06-07T00:41:31Z","content":"Created At: 2026-06-07T00:41:31Z\nCompleted At: 2026-06-07T00:41:34Z\nThe following changes were made by the multi_replace_file_content tool to: c:\\Users\\ASUS\\OneDrive\\Desktop\\Bodyaligner\\src\\app\\page.tsx. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.\n[diff_block_start]\n@@ -737,14 +737,14 @@\n             <div className=\"hero-text-content\">\n               <h1 className=\"hero-massive-title\">\n                 <span className=\"title-line\" style={{ animationDelay: \"0.1s\" }}>\n-                  RELIEF FROM <em className=\"text-gradient-glow\">PAIN.</em>\n+                  Relief from <em className=\"text-gradient-glow\">PAIN.</em>\n                 </span>\n                 <span className=\"title-line\" style={{ animationDelay: \"0.3s\" }}>\n-                  RESTORE <em className=\"text-gradient-glow\">MOVEMENT.</em>\n+                  Restore <em className=\"text-gradient-glow\">MOVEMENT.</em>\n                 </span>\n               </h1>\n-              <p className=\"lead hero-lead-anim\">\n-                Advanced physiotherapy and chiropractic care for back pain, neck pain, joint pain, posture issues, and sports injuries. Get perfectly aligned by Dr. Kunal Mahalle.\n+              <p className=\"hero-subheading hero-lead-anim\">\n+                Expert chiropractic &amp; physiotherapy for back pain, neck stiffness, joint issues, and sports injuries. Led by Dr. Kunal Mahalle.\n               </p>\n               <div className=\"hero-actions hero-actions-anim\">\n                 <a href=\"#booking\" className=\"btn btn-accent btn-large\">\n[diff_block_end]\n\nPlease note that the above snippet only shows the MODIFIED lines from the last change. It sho
+<truncated 4121 bytes>
+tual file contents may have man
+NEXT NEXT:
+{"step_index":237,"source":"SYSTEM","type":"EPHEMERAL_MESSAGE","status":"DONE","created_at":"2026-06-07T00:41:34Z","content":"The following is an <EPHEMERAL_MESSAGE> not actually sent by the user. It is provided by the system as a set of reminders and general important information to pay attention to. Do NOT respond to this message, just act accordingly.\n\n<EPHEMERAL_MESSAGE>\n<planning_mode>\nYou're in planning mode. Exercise judgement on whether the user's last request warrants a plan and take action accordingly.\nIf the user's request warrants a plan then follow this workflow:\n1. Research first before taking actions. Do not use your code editing tools or run modifying commands during this time.\n2. Create an implementation plan artifact with `request_feedback = true` to request approval. Include any open questions for the user directly in the implementation plan. Don't use the ask_question tool to ask these questions. Stop calling tools and allow the user to review the plan and provide feedback or approval.\n3. After receiving approval, begin execution. Create and update the task artifact as you work.\n4. Verify any work that you have done.\n5. Create a walkthrough artifact to present your work to the user. When writing artifacts, make sure to follow the artifact formatting guidelines and use github alerts to highlight critical sections.\nIf the user's request does NOT warrant a plan then continue your work WITHOUT making a plan or requesting user feedback.\n</planning_mode>\n<bash_command_reminder>\nCRITICAL INSTRUCTION 1: You may have access to a variety of tools at your disposal. Some tools may be for a specific task such as 'view_file' (for viewing contents of a file). Others may be very broadly applicable such as the ability to run a command on a terminal. Always prioritize using the most specific tool you can for the task at hand. Here are some rules: (a) NEVER run cat inside a bash command to create a new file or append to an existing file. (b) ALWAYS us
+
+
+
+========================================================================
+OCCURRENCE 14 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 385 | TYPE: content
+========================================================================
+Created At: 2026-06-07T21:08:37Z
+Completed At: 2026-06-07T21:08:42Z
+
+				The command completed successfully.
+				Output:
+				STEP: 39 TOOL: multi_replace_file_content
+'[{"AllowMultiple":false,"EndLine":216,"ReplacementContent":".hero h1{ font-size:clamp(3.5rem,7.4vw,7.5rem); line-height:1.1; font-weight:700; font-family:var(--sans); max-width:20ch; margin-inline:auto; letter-spacing:-.03em; text-align:center; text-shadow: 0 4px 24px rgba(0,0,0,0.5); }\\n.hero h1 em{ font-style:italic; font-family:var(--serif); font-weight:600; }\\n.hero h1 .word{ display:inline-block; opacity:0; transform:translateY(0.35em); filter:blur(5px); animation:revealWord 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }\\n@keyframes revealWord { to { opacity:1; transform:translateY(0); filter:blur(0); } }\\n.text-gradient-glow {\\n  background: linear-gradient(to right, #ccff00, #9dff00);\\n  -webkit-background-clip: text;\\n  -webkit-text-fill-color: transparent;\\n  text-shadow: 0 0 40px rgba(204, 255, 0, 0.4);\\n  display: inline-block;\\n  padding-right: 0.1em;\\n}\\n.eyebrow-pill {\\n  display: inline-flex;\\n  align-items: center;\\n  gap: 0.5em;\\n  font-size: 0.85rem;\\n  font-weight: 600;\\n  letter-spacing: 0.1em;\\n  text-transform: uppercase;\\n  color: #ccff00;\\n  background: rgba(204, 255, 0, 0.1);\\n  border: 1px solid rgba(204, 255, 0, 0.2);\\n  padding: 0.6em 1.2em;\\n  border-radius: 100px;\\n  backdrop-filter: blur(8px);\\n  box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);\\n}\\n.eyebrow-pill::before {\\n  content: \\"\\";\\n  width: 8px;\\n  height: 8px;\\n  background: #ccff00;\\n  border-radius: 50%;\\n  box-shadow: 0 0 10px #ccff00;\\n}","StartLine":214,"TargetContent":".hero h1{ font-size:clamp(2.9rem,7.4vw,6.7rem); line-height:.98; font-weight:500; max-width:20ch; margin-inline:auto; letter-spacing:-.02em; text-align:center; }\\n.hero h1 em{ font-style:italic; color:inherit; }\\n.hero h1 .word{ display:inline-block; opacity:0; transform:translateY(0.35em); filter:blur(5px); animation:revealWord 1s cubic-bezier(0.16, 1, 
+<truncated 120 bytes>
+
+STEP: 39 TOOL: multi_replace_file_content
+'[{"AllowMultiple":false,"EndLine":741,"ReplacementContent":"          <div className=\\"hero-eyebrow-anim\\" style={{ display: \'flex\', justifyContent: \'center\' }}>\\n            <span className=\\"eyebrow-pill\\">\\n              Trusted Physiotherapy Clinic\\n            </span>\\n          </div>\\n          <div className=\\"hero-top-row\\">\\n            <div>\\n              <h1 style={{ color: \\"#ffffff\\" }}>\\n                <span className=\\"word\\" style={{ animationDelay: \\"0.1s\\" }}>Relief</span>{\\" \\"}\\n                <span className=\\"word\\" style={{ animationDelay: \\"0.2s\\" }}>from</span>{\\" \\"}\\n                <span className=\\"word\\" style={{ animationDelay: \\"0.3s\\" }}><em className=\\"text-gradient-glow\\">Pain</em>.</span>\\n                <br/>\\n                <span className=\\"word\\" style={{ animationDelay: \\"0.5s\\" }}>Restore</span>{\\" \\"}\\n                <span className=\\"word\\" style={{ animationDelay: \\"0.6s\\" }}><em className=\\"text-gradient-glow\\">Movement</em>.</span>\\n              </h1>","StartLine":729,"TargetContent":"          <div className=\\"hero-eyebrow-anim\\">\\n            <span className=\\"eyebrow\\" style={{ color: \\"var(--mint)\\" }}>\\n              Trusted Physiotherapy Clinic\\n            </span>\\n          </div>\\n          <div className=\\"hero-top-row\\">\\n            <div>\\n              <h1 style={{ color: \\"#ffffff\\" }}>\\n                <span className=\\"word\\" style={{ animationDelay: \\"0.1s\\" }}>Relief</span>{\\" \\"}\\n                <span className=\\"word\\" style={{ animationDelay: \\"0.2s\\" }}>from</span>{\\" \\"}\\n                <span className=\\"word\\" style={{ animationDelay: \\"0.3s\\" }}><em>Pain</em>.</span>{\\" \\"}\\n                <span className=\\"word\\" style={{ animationDelay: \\"0.5s\\" }}>Restore</span>{\\" \\"}\\n                <span className=\\"word\\" style={{ animationDelay: \\"0.6s\\" }}><em>Movement</em>.</span>\\n  
+
+
+
+========================================================================
+OCCURRENCE 15 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 425 | TYPE: content
+========================================================================
+Created At: 2026-06-07T21:09:28Z
+Completed At: 2026-06-07T21:09:28Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/src/components/ui/video-text.tsx`
+Total Lines: 106
+Total Bytes: 2736
+Showing lines 1 to 106
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: "use client"
+2: 
+3: import React, { ElementType, ReactNode, useEffect, useState } from "react"
+4: 
+5: function cn(...classes: Array<string | undefined | null | false>) {
+6:   return classes.filter(Boolean).join(" ")
+7: }
+8: 
+9: export interface VideoTextProps {
+10:   src: string
+11:   className?: string
+12:   autoPlay?: boolean
+13:   muted?: boolean
+14:   loop?: boolean
+15:   preload?: "auto" | "metadata" | "none"
+16:   children: ReactNode
+17:   fontSize?: string | number
+18:   fontWeight?: string | number
+19:   textAnchor?: string
+20:   dominantBaseline?: string
+21:   fontFamily?: string
+22:   as?: ElementType
+23: }
+24: 
+25: export function VideoText({
+26:   src,
+27:   children,
+28:   className = "",
+29:   autoPlay = true,
+30:   muted = true,
+31:   loop = true,
+32:   preload = "auto",
+33:   fontSize = 20,
+34:   fontWeight = "bold",
+35:   textAnchor = "middle",
+36:   dominantBaseline = "middle",
+37:   fontFamily = "sans-serif",
+38:   as: Component = "span",
+39: }: VideoTextProps) {
+40:   const content = React.Children.toArray(children).join("")
+41:   const isVideo = /\.(mp4|webm|mov)$/i.test(src)
+42: 
+43:   // For static images we use a background-image + background-clip:text
+44:   // This reliably fills the glyphs with the image. For video sources
+45:   // we continue to render an absolutely positioned <video> behind
+46:   // a transparent text layer.
+47:   const commonStyle: React.CSSProperties = {
+48:     display: "inline-block",
+49:     fontSize: "inherit",
+50:     lineHeight: "inherit",
+51:   }
+52: 
+53:   if (!isVideo) {
+54:     const bgStyle: React.CSSProperties = {
+55:       ...commonStyle,
+56:       backgroundImage: `url(${src})`,
+57:       backgroundSize: "cover",
+58:       backgroundPosition: "center",
+59:       backgroundRepeat: "no-repeat",
+60:       color: "transparent",
+61:       WebkitTextFillColor: "transparent",
+62:       WebkitBackgroundClip: "text",
+63:       backgroundClip: "text",
+64:     }
+65: 
+66:     return (
+67:       <Component className={cn("inline-block", className)} style={bgStyle}>
+68:         {content}
+69:       </Component>
+70:     )
+71:   }
+72: 
+73:   return (
+74:     <Component
+75:       className={cn("relative inline-block overflow-hidden text-transparent", className)}
+76:       style={commonStyle}
+77:     >
+78:       <div className="absolute inset-0">
+79:         <video
+80:           className="h-full w-full object-cover"
+81:           autoPlay={autoPlay}
+82:           muted={muted}
+83:           loop={loop}
+84:           preload={preload}
+85:           playsInline
+86:         >
+87:           <source src={src} type="video/mp4" />
+88:           Your browser does not support the video tag.
+89:         </video>
+90:       </div>
+91: 
+92:       <span
+93:         style={{
+94:           position: "relative",
+95:           zIndex: 1,
+96:           display: "inline-block",
+97:           color: "transparent",
+98:           WebkitTextFillColor: "transparent",
+99:         }}
+100:       >
+101:         {content}
+102:       </span>
+103:     </Component>
+104:   )
+105: }
+106: 
+The above content shows the entire, complete file contents of the requested file.
+
+
+========================================================================
+OCCURRENCE 16 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 782 | TYPE: content
+========================================================================
+I will write a python script `extract_step_486_492.py` to search `transcript.jsonl` for Step 486 and Step 492, which will contain the full code of the deleted `extract_css.py` and `compile_css.py` scripts. These scripts were used to compile and merge the custom CSS and page code, so they will contain the styling for the text-masked words "PAIN" and "MOVEMENT".
+
+========================================================================
+OCCURRENCE 17 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 794 | TYPE: tool_arg:write_to_file:CodeContent
+========================================================================
+"import os\nimport json\n\nbrain_dir = r\"C:\\Users\\ASUS\\.gemini\\antigravity-ide\\brain\"\noutput_path = r\"c:\\Users\\ASUS\\OneDrive\\Desktop\\Bodyaligner\\pain_movement_recovered.txt\"\n\noccurrences = []\nprint(\"Searching all transcripts for PAIN/MOVEMENT masked letters...\")\nfor conv_id in os.listdir(brain_dir):\n    item_path = os.path.join(brain_dir, conv_id)\n    if os.path.isdir(item_path):\n        logs_path = os.path.join(item_path, \".system_generated\", \"logs\", \"transcript.jsonl\")\n        if os.path.exists(logs_path):\n            with open(logs_path, \"r\", encoding=\"utf-8\") as f:\n                for line_num, line in enumerate(f, 1):\n                    # Look for PAIN or MOVEMENT letters mapping, or background-clip text, or custom styling\n                    if \"background-clip\" in line or \"backgroundClip\" in line or \"text-mask\" in line or \"span-letter\" in line or (\"PAIN\" in line and \"MOVEMENT\" in line and (\"Image\" in line or \"span\" in line)):\n                        try:\n                            data = json.loads(line)\n                            step = data.get(\"step_index\")\n                            content = data.get(\"content\", \"\")\n                            tool_calls = data.get(\"tool_calls\", [])\n                            \n                            for tc in tool_calls:\n                                args = tc.get(\"args\", {})\n                                for k, v in args.items():\n                                    if isinstance(v, str) and (\"PAIN\" in v or \"MOVEMENT\" in v):\n                                        occurrences.append({\n                                            \"conv_id\": conv_id,\n                                            \"step\": step,\n                                            \"type\": f\"tool_arg:{tc.get('name')}:{k}\",\n                                            \"val\": v\n                                        })\n                                    elif isinstance(v, list):\n               
+<truncated 1755 bytes>
+
+========================================================================
+OCCURRENCE 18 | CONV: 5eacdc66-5dd1-4475-9595-1f94483b6a37 | STEP: 794 | TYPE: content
+========================================================================
+I will write a python script `search_pain_movement.py` to search all transcripts for the implementation of the image-masked letters in the words "PAIN" and "MOVEMENT". This will recover the exact React markup and CSS styling used to render them.
+
+========================================================================
+OCCURRENCE 19 | CONV: dd960535-21ed-496c-9cac-c6a4a553e606 | STEP: 25 | TYPE: content
+========================================================================
+Created At: 2026-06-07T17:36:18Z
+Completed At: 2026-06-07T17:36:19Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/src/app/globals.css`
+Total Lines: 3686
+Total Bytes: 64202
+Showing lines 1 to 800
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: /* ============================================================
+2:    BodyAligner — Physiotherapy Clinic
+3:    Warm & human wellness · deep teal / mint / cream
+4:    ============================================================ */
+5: 
+6: :root {
+7:   /* typography from Next.js google fonts */
+8:   --serif: var(--font-serif), 'Spectral', Georgia, serif;
+9:   --sans: var(--font-sans), 'Poppins', system-ui, sans-serif;
+10: 
+11:   /* palette */
+12:   --ink: #ffffff;
+13:   /* Pure White (Secondary Text) */
+14:   --ink-soft: #94a3b8;
+15:   /* Light Slate Gray for sub-elements */
+16:   --mint: #0083CA;
+17:   /* Bright Blue (Primary) */
+18:   --mint-deep: #006CA6;
+19:   /* Deeper Primary Blue */
+20:   --cream: #000000;
+21:   /* Pure Black Background */
+22:   --cream-2: #090d16;
+23:   /* Rich dark navy-black background */
+24:   --paper: #05080f;
+25:   /* Near-black background for cards */
+26:   --clay: #BB6801;
+27:   /* Amber / Gold (Tertiary) */
+28:   --clay-soft: #d97706;
+29:   --sand: #1e293b;
+30:   /* Dark slate borders */
+31:   --line: rgba(255, 255, 255, 0.12);
+32:   --line-2: rgba(255, 255, 255, 0.08);
+33: 
+34:   /* type */
+35:   /* --serif and --sans are defined above to use Next.js local variables */
+36: 
+37:   /* motion */
+38:   --ease: cubic-bezier(.22, .61, .36, 1);
+39:   --ease-out: cubic-bezier(.16, 1, .3, 1);
+40:   --reveal-y: 36px;
+41:   --reveal-dur: .9s;
+42: 
+43:   /* shape */
+44:   --r-sm: 10px;
+45:   --r: 18px;
+46:   --r-lg: 28px;
+47:   --r-xl: 40px;
+48:   --shadow: 0 24px 60px -28px rgba(29, 58, 138, .25);
+49:   --shadow-soft: 0 12px 40px -22px rgba(2
+<truncated 15527 bytes>
+eight: 1;
+727:   color: #fff;
+728: }
+729: 
+730: .hero-meta .stat .l {
+731:   font-size: .85rem;
+732:   color: rgba(255, 255, 255, .7);
+733:   margin-top: 6px;
+734:   max-width: 14ch;
+735: }
+736: 
+737: @media(max-width:760px) {
+738:   .hero-meta {
+739:     display: none;
+740:   }
+741: }
+742: 
+743: .text-gradient-glow {
+744:   background: linear-gradient(90deg, #00f2fe, #4facfe, #00f2fe);
+745:   background-size: 200% auto;
+746:   -webkit-background-clip: text;
+747:   -webkit-text-fill-color: transparent;
+748:   text-shadow: 0 0 40px rgba(0, 242, 254, 0.5);
+749:   display: inline-block;
+750:   padding-right: 0.1em;
+751:   animation: textShine 3s linear infinite;
+752: }
+753: @keyframes textShine {
+754:   to {
+755:     background-position: 200% center;
+756:   }
+757: }
+758: .eyebrow-pill {
+759:   display: inline-flex;
+760:   align-items: center;
+761:   gap: 0.5em;
+762:   font-size: 0.85rem;
+763:   font-weight: 600;
+764:   letter-spacing: 0.1em;
+765:   text-transform: uppercase;
+766:   color: #00f2fe;
+767:   background: rgba(0, 242, 254, 0.1);
+768:   border: 1px solid rgba(0, 242, 254, 0.2);
+769:   padding: 0.6em 1.2em;
+770:   border-radius: 100px;
+771:   backdrop-filter: blur(8px);
+772:   box-shadow: 0 0 20px rgba(0, 242, 254, 0.1);
+773: }
+774: .eyebrow-pill::before {
+775:   content: "";
+776:   width: 8px;
+777:   height: 8px;
+778:   background: #00f2fe;
+779:   border-radius: 50%;
+780:   box-shadow: 0 0 10px #00f2fe;
+781: }
+782: 
+783: .hero-play {
+784:   display: inline-flex;
+785:   align-items: center;
+786:   gap: 12px;
+787:   margin-top: 30px;
+788:   color: #fff;
+789:   font-weight: 500;
+790: }
+791: 
+792: .hero-play .pp {
+793:   width: 54px;
+794:   height: 54px;
+795:   border-radius: 50%;
+796:   border: 1.5px solid rgba(255, 255, 255, .5);
+797:   display: grid;
+798:   place-items: center;
+799:   transition: .4s var(--ease-out);
+800: }
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+
+
+========================================================================
+OCCURRENCE 20 | CONV: dd960535-21ed-496c-9cac-c6a4a553e606 | STEP: 58 | TYPE: content
+========================================================================
+I have adjusted the CSS styling in [globals.css](file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/src/app/globals.css#L3375-L3533) to reduce the large vertical gap between the two rows in the hero section.
+
+### What Was Done
+1. **Reduced Image Slot Heights**: Adjusted `--keyword-height` on `.hero-massive-title` from a maximum of `12rem` down to a maximum of `8.5rem` to better match the text height.
+2. **Applied Desktop Negative Margins**: Added negative vertical margins to the transparent word-images (`margin-block: -1.2rem` for the "PAIN" image, and `margin-block: -3.5rem` for the larger "MOVEMENT" image) to draw the two lines closer together.
+3. **Preserved Mobile Layout**: Reset the margins to `0` inside the `820px` media query so that the vertical stacking remains clean and readable on smaller screens.
+
+========================================================================
+OCCURRENCE 21 | CONV: dd960535-21ed-496c-9cac-c6a4a553e606 | STEP: 72 | TYPE: content
+========================================================================
+I have scaled up both elements in the hero title (base text and keyword images) to make them much more prominent and readable, while keeping the gap closed:
+
+1. **Keyword Images ("PAIN" & "MOVEMENT")**: Increased `--keyword-height` on desktop from `clamp(8.5rem, 13vw, 11rem)` to `clamp(11rem, 16vw, 14rem)` (allowing the graphic letters with visual images to render much larger).
+2. **Base Text ("RELIEF FROM" & "RESTORE")**: Increased `.title-base` font size from `clamp(2rem, 4.2vw, 3.5rem)` to `clamp(2.8rem, 5.2vw, 4.4rem)`. This keeps the base text subordinate to the keywords but ensures it scales beautifully.
+3. **Optimized Overlaps**: Adjusted the desktop negative margins to `margin-block: -3rem` (for "PAIN") and `margin-block: -7.8rem` (for "MOVEMENT") to keep both rows stacked close to each other without a large gap.
+4. **Mobile Responsiveness**: Scaled up mobile values as well (`--keyword-height` up to `6rem`, and `.title-base` font-size up to `2.5rem`) so that the text and image keywords remain larger and easy to read on mobile.
+
+Please refresh your browser at `http://localhost:3000` to see the new layout!
+
+========================================================================
+OCCURRENCE 22 | CONV: dd960535-21ed-496c-9cac-c6a4a553e606 | STEP: 80 | TYPE: content
+========================================================================
+I have scaled up the hero title elements a little more:
+
+1. **Keyword Images ("PAIN" & "MOVEMENT")**: Increased `--keyword-height` on desktop from `clamp(11rem, 16vw, 14rem)` to `clamp(13rem, 18vw, 16.5rem)` to expand the visual keywords.
+2. **Base Text ("RELIEF FROM" & "RESTORE")**: Increased `.title-base` font size from `clamp(2.8rem, 5.2vw, 4.4rem)` to `clamp(3.4rem, 6vw, 5rem)`.
+3. **Desktop Block Margins**: Adjusted the negative block margins on the images to `margin-block: -3.8rem` (for "PAIN") and `margin-block: -9.8rem` (for "MOVEMENT") to keep the rows sitting neatly one below another without a large gap.
+4. **Mobile Query Updates**: Increased mobile sizes to `--keyword-height: clamp(4.5rem, 12vw, 7rem)` and `.title-base` font size to `clamp(1.8rem, 5.5vw, 2.8rem)` to keep mobile view balanced.
+
+Please refresh your browser page at `http://localhost:3000` to review the larger title layout!
+
+========================================================================
+OCCURRENCE 23 | CONV: e8f9fab4-ea4b-48bd-81f9-febaa594e287 | STEP: 612 | TYPE: content
+========================================================================
+<USER_REQUEST>
+Build a 3D Creator portfolio landing page for "Jack" using React, TypeScript, Tailwind CSS, Framer Motion, and Lucide React. The page has a dark theme (#0C0C0C background) with the font Kanit (Google Fonts, weights 300-900). The page title is "Jack -- 3D Creator".
+
+GLOBAL STYLES
+Background: #0C0C0C on html, body, #root, and the main wrapper
+Font family: 'Kanit', sans-serif
+Global reset: box-sizing border-box, margin 0, padding 0
+CSS class .hero-heading: gradient text using background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%) with -webkit-background-clip: text and -webkit-text-fill-color: transparent
+Main wrapper has overflowX: 'clip'
+SECTION ORDER
+HeroSection
+MarqueeSection
+AboutSection
+ServicesSection
+ProjectsSection
+1. HERO SECTION
+Full viewport height (h-screen), flex column layout with overflowX: clip.
+
+Navbar: Horizontal nav bar with 4 links -- "About", "Price", "Projects", "Contact" -- evenly spaced with justify-between. Text color #D7E2EA, font-medium, uppercase, tracking-wider. Sizes: text-sm md:text-lg lg:text-[1.4rem]. Padding: px-6 md:px-10 pt-6 md:pt-8. Hover: opacity 70% with 200ms transition.
+
+Hero Heading: Massive h1 with text "Hi, i'm jack" (lowercase "i", curly apostrophe via &apos;). Uses the .hero-heading gradient text class. Font-black, uppercase, tracking-tight, leading-none, whitespace-nowrap, w-full. Font sizes: text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw]. Margin top: mt-6 sm:mt-4 md:-mt-5. Wrapped in overflow-hidden container.
+
+Bottom bar: Flexbox justify-between items-end with pb-7 sm:pb-8 md:pb-10:
+
+Left: paragraph text "a 3d creator driven by crafting striking and unforgettable projects", color #D7E2EA, font-light, uppercase, tracking-wide, leading-snug. Font size: clamp(0.75rem, 1.4vw, 1.5rem). Max-width: max-w-[160px] sm:max-w-[220px] md:max-w-[260px].
+Right: ContactButton component (see below)
+Hero Portrait: Centered absolutely. Uses a Magnet component (mouse-following magnetic effect) wrapping an image. Image URL: https://shrug-person-78902957.
+<truncated 10277 bytes>
+e".
+
+LiveProjectButton: Ghost/outline pill button. Rounded-full, border-2 border-[#D7E2EA], text color #D7E2EA, font-medium, uppercase, tracking-widest. Sizes: px-8 py-3 sm:px-10 sm:py-3.5, text text-sm sm:text-base. Hover: bg-[#D7E2EA]/10. Label: "Live Project".
+
+FadeIn: Framer Motion wrapper using whileInView with viewport={{ once: true, margin: "50px", amount: 0 }}. Accepts delay, duration (default 0.7), x (default 0), y (default 30). Easing: [0.25, 0.1, 0.25, 1]. Uses motion.create() for dynamic element types.
+
+Magnet: Mouse-following magnetic hover effect. Tracks mouse position relative to element center, applies translate3d transform divided by strength factor. Activates when cursor is within padding distance of element edge. Smooth transition in (0.3s ease-out) and out (0.6s ease-in-out). Uses willChange: 'transform'.
+
+AnimatedText: Character-by-character scroll-reveal text animation. Each character goes from opacity 0.2 to 1 based on its position in the text relative to scroll progress. Uses Framer Motion useScroll targeting the paragraph element with offset ['start 0.8', 'end 0.2']. Each character uses invisible placeholder + absolute positioned animated span.
+
+KEY DEPENDENCIES
+react, react-dom (^18.3.1)
+framer-motion (^12.38.0)
+lucide-react (^0.344.0)
+tailwindcss (^3.4.1)
+vite, typescript
+RESPONSIVE BREAKPOINTS
+All sections use Tailwind's default breakpoints (sm: 640px, md: 768px, lg: 1024px) with mobile-first approach. Heavy use of clamp() for fluid typography. The entire design scales gracefully from mobile to ultra-wide screens.
+
+
+can u use some animation here
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-07T05:22:18+05:30.
+
+The user's current state is as follows:
+Active Document: c:\Users\ASUS\OneDrive\Desktop\Bodyaligner\src\app\page.tsx (LANGUAGE_TSX)
+Cursor is on line: 32
+Other open documents:
+- c:\Users\ASUS\OneDrive\Desktop\Bodyaligner\src\app\page.tsx (LANGUAGE_TSX)
+- c:\Users\ASUS\OneDrive\Desktop\Bodyaligner\src\app\globals.css (LANGUAGE_CSS)
+</ADDITIONAL_METADATA>

@@ -1,0 +1,50 @@
+Created At: 2026-06-07T21:17:12Z
+Completed At: 2026-06-07T21:17:12Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/search_sections.py`
+Total Lines: 42
+Total Bytes: 2214
+Showing lines 1 to 42
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: import json
+2: import re
+3: 
+4: log_path = r"C:\Users\ASUS\.gemini\antigravity-ide\brain\5eacdc66-5dd1-4475-9595-1f94483b6a37\.system_generated\logs\transcript.jsonl"
+5: 
+6: print("Searching logs for section contents...")
+7: with open(log_path, 'r', encoding='utf-8') as f:
+8:     for line_num, line in enumerate(f, 1):
+9:         if "why-choose" in line or "clinic-tour" in line:
+10:             try:
+11:                 data = json.loads(line)
+12:                 step = data.get("step_index")
+13:                 stype = data.get("type")
+14:                 source = data.get("source")
+15:                 content = data.get("content", "")
+16:                 
+17:                 # Check tool calls
+18:                 tool_calls = data.get("tool_calls", [])
+19:                 for tc in tool_calls:
+20:                     args = tc.get("args", {})
+21:                     # Look at contents
+22:                     for k, v in args.items():
+23:                         if isinstance(v, str) and ("why-choose" in v or "clinic-tour" in v):
+24:                             # Check if it has section HTML
+25:                             if "section" in v or "id=" in v or "className" in v:
+26:                                 print(f"\n--- Line {line_num} Step {step} Tool {tc.get('name')} Arg {k} ---")
+27:                                 print(v[:3000] + "...")
+28:                         elif isinstance(v, list):
+29:                             # It could be replacement chunks
+30:                             for chunk in v:
+31:                                 if isinstance(chunk, dict):
+32:                                     for ck, cv in chunk.items():
+33:                                         if isinstance(cv, str) and ("why-choose" in cv or "clinic-tour" in cv):
+34:                                             print(f"\n--- Line {line_num} Step {step} Tool {tc.get('name')} Chunks ---")
+35:                                             print(cv[:3000] + "...")
+36:                                             
+37:                 if content and ("why-choose" in content or "clinic-tour" in content):
+38:                     print(f"\n--- Line {line_num} Step {step} Type {stype} Content ---")
+39:                     print(content[:3000] + "...")
+40:             except Exception as e:
+41:                 print(f"Error on line {line_num}: {e}")
+42: 
+The above content shows the entire, complete file contents of the requested file.

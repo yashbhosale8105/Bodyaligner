@@ -1,0 +1,15 @@
+{
+  "name": "replace_file_content",
+  "args": {
+    "AllowMultiple": "false",
+    "Description": "\"Add an SVG sharpen filter definitions block to the main render output of page.tsx.\"",
+    "EndLine": "870",
+    "Instruction": "\"Add the SVG sharpen-filter definition block inside the main fragment return block of Home.\"",
+    "ReplacementContent": "\"  return (\\n    <>\\n      <svg width=\\\"0\\\" height=\\\"0\\\" style={{ position: \\\"absolute\\\", width: 0, height: 0, overflow: \\\"hidden\\\" }} aria-hidden=\\\"true\\\">\\n        <filter id=\\\"sharpen-filter\\\">\\n          <feConvolveMatrix order=\\\"3\\\" preserveAlpha=\\\"true\\\" kernelMatrix=\\\"0 -0.5 0  -0.5 3 -0.5  0 -0.5 0\\\"/>\\n        </filter>\\n      </svg>\\n      {/* ============ NAV ============ */}\\n      <nav className={`nav ${scrolled ? \\\"scrolled\\\" : \\\"\\\"} ${!scrolled ? \\\"on-dark\\\" : \\\"\\\"}`} id=\\\"nav\\\">\"",
+    "StartLine": "866",
+    "TargetContent": "\"  return (\\n    <>\\n      {/* ============ NAV ============ */}\\n      <nav className={`nav ${scrolled ? \\\"scrolled\\\" : \\\"\\\"} ${!scrolled ? \\\"on-dark\\\" : \\\"\\\"}`} id=\\\"nav\\\">\"",
+    "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\OneDrive\\\\Desktop\\\\Bodyaligner\\\\src\\\\app\\\\page.tsx\"",
+    "toolAction": "\"Adding SVG sharpen filter to page.tsx\"",
+    "toolSummary": "\"Add SVG filter in page.tsx\""
+  }
+}

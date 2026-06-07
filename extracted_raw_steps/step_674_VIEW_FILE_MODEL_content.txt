@@ -1,0 +1,36 @@
+Created At: 2026-06-07T21:19:42Z
+Completed At: 2026-06-07T21:19:42Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/extract_snippet.py`
+Total Lines: 28
+Total Bytes: 1316
+Showing lines 1 to 28
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: import json
+2: 
+3: log_path = r"C:\Users\ASUS\.gemini\antigravity-ide\brain\5eacdc66-5dd1-4475-9595-1f94483b6a37\.system_generated\logs\transcript.jsonl"
+4: out_path = "recovered_sections.txt"
+5: 
+6: print("Searching logs and writing full matched items to file...")
+7: with open(log_path, 'r', encoding='utf-8') as f:
+8:     with open(out_path, 'w', encoding='utf-8') as out:
+9:         for line_num, line in enumerate(f, 1):
+10:             if "why-choose" in line or "clinic-tour" in line:
+11:                 try:
+12:                     data = json.loads(line)
+13:                     step = data.get("step_index")
+14:                     stype = data.get("type")
+15:                     source = data.get("source")
+16:                     
+17:                     out.write(f"\n============================================================\n")
+18:                     out.write(f"LINE {line_num} | STEP {step} | TYPE {stype} | SOURCE {source}\n")
+19:                     out.write(f"============================================================\n")
+20:                     
+21:                     # Dump the JSON nicely
+22:                     out.write(json.dumps(data, indent=2))
+23:                     out.write("\n")
+24:                 except Exception as e:
+25:                     out.write(f"ERROR ON LINE {line_num}: {e}\n")
+26:                     
+27: print("Done! Check recovered_sections.txt")
+28: 
+The above content shows the entire, complete file contents of the requested file.

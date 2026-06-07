@@ -1,0 +1,8 @@
+{
+  "step_index": 78,
+  "source": "MODEL",
+  "type": "PLANNER_RESPONSE",
+  "status": "DONE",
+  "created_at": "2026-06-07T17:47:43Z",
+  "content": "I have fixed the blurriness of the **MOVEMENT** word-image:\n\n### Why was it blurry?\nThe native height of the `Video_background_for_physiothera__202606071803-removebg-preview.png` image is `373px`. In the previous change, setting the CSS height of that image to `392px` (coupled with Windows high-DPI system display scaling) forced the browser to stretch the pixels beyond their native resolution, causing the text edges to look blurry/pixelated.\n\n### How I fixed it:\n1. **Scaled Down to Crisp Resolution**: \n   - Reduced `--keyword-height` on desktop back to a max of `12rem` (192px).\n   - Reduced the `--movement-scale` multiplier from `1.75` to `1.55`. \n   - This keeps the \"MOVEMENT\" image capped at a maximum of `297px` tall in CSS. At this size, the image stays well below its native height of `373px` (even on high-DPI screens), forcing the browser to scale it down and rendering it **perfectly crisp and sharp**.\n2. **Balanced Spacing & Base Font Size**:\n   - Adjusted `.title-base` (\"RELIEF FROM / RESTORE\") to `clamp(2.4rem, 4.6vw, 3.8rem)` to keep it scaled nicely with the sharp images.\n   - Updated the negative margins to `margin-block: -2.3rem` (for \"PAIN\") and `margin-block: -5.6rem` (for \"MOVEMENT\") to keep the layout boxes matching perfectly at exactly `118.4px` tall, keeping the lines tightly stacked with zero vertical gap.\n\nPlease reload the page at `http://localhost:3000` to see the sharp, crisp result!"
+}

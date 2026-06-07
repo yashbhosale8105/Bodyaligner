@@ -1,0 +1,1 @@
+I will write a python script `extract_steps_individual.py` to extract the exact untruncated content of the steps containing the `why-choose` and `clinic-tour` sections directly from the raw `transcript.jsonl` file, saving each matched step to its own text file. This avoids any system-level truncation when viewing files.

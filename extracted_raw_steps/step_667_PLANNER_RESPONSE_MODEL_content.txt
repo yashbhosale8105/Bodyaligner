@@ -1,0 +1,1 @@
+I will search the current `src/app/page.tsx` file for references to `#why-choose` or `#clinic-tour` to see what is currently there.

@@ -1,0 +1,1 @@
+I will check the contents of the `backup` directory to see if any previous versions or backups of `page.tsx` and `globals.css` are stored there.

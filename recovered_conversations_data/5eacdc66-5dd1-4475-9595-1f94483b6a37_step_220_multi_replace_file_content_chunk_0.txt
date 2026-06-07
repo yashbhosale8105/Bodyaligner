@@ -1,0 +1,7 @@
+        <a href="#clinic-tour" onClick={() => setMobileMenuOpen(false)}>
+          Clinic Tour
+        </a>
+        <a href="#contact" onClick={() => setMobileMenuOpen(false)}>
+          Location
+        </a>
+        <a href="#faq" onClick={() => setMobileMenuOpen(false)}>

@@ -1,0 +1,4 @@
+.clinic-tour {
+  position: relative;
+  padding-top: 1.5rem;
+}

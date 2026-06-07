@@ -1,0 +1,78 @@
+Created At: 2026-06-07T21:17:20Z
+Completed At: 2026-06-07T21:17:21Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/step_218_view_file.txt`
+Total Lines: 70
+Total Bytes: 3215
+Showing lines 1 to 70
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: Created At: 2026-06-07T00:32:40Z
+2: Completed At: 2026-06-07T00:32:41Z
+3: File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/src/app/page.tsx`
+4: Total Lines: 1881
+5: Total Bytes: 81946
+6: Showing lines 660 to 720
+7: The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+8: 660:         </a>
+9: 661:         <div className="nav-links">
+10: 662:           <a href="#about">About</a>
+11: 663:           <a href="#services">Services</a>
+12: 664:           <a href="#why-choose">Why Us</a>
+13: 665:           <a href="#booking">Booking</a>
+14: 666:           <a href="#clinic-tour">Clinic Tour</a>
+15: 667:           <a href="#faq">FAQ</a>
+16: 668:         </div>
+17: 669:         <div className="nav-cta">
+18: 670:           <a href="tel:+917218818815" className="btn btn-ghost">
+19: 671:             Call Now
+20: 672:           </a>
+21: 673:           <a href="#booking" className="btn btn-accent">
+22: 674:             Book Appointment
+23: 675:           </a>
+24: 676:           <button
+25: 677:             className="nav-toggle"
+26: 678:             id="navToggle"
+27: 679:             aria-label="Menu"
+28: 680:             onClick={() => setMobileMenuOpen(true)}
+29: 681:           >
+30: 682:             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+31: 683:               <path d="M4 7h16M4 12h16M4 17h16" />
+32: 684:             </svg>
+33: 685:           </button>
+34: 686:         </div>
+35: 687:       </nav>
+36: 688: 
+37: 689:       {/* ============ MOBILE MENU DRAWER ============ */}
+38: 690:       <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`} id="mobileMenu">
+39: 691:         <button
+40: 692:           className="close"
+41: 693:           id="menuClose"
+42: 694:           aria-label="Close"
+43: 695:           onClick={() => setMobileMenuOpen(false)}
+44: 696:         >
+45: 697:           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+46: 698:             <path d="M6 6l12 12M18 6L6 18" />
+47: 699:           </svg>
+48: 700:         </button>
+49: 701:         <a href="#about" onClick={() => setMobileMenuOpen(false)}>
+50: 702:           About
+51: 703:         </a>
+52: 704:         <a href="#services" onClick={() => setMobileMenuOpen(false)}>
+53: 705:           Services
+54: 706:         </a>
+55: 707:         <a href="#why-choose" onClick={() => setMobileMenuOpen(false)}>
+56: 708:           Why Us
+57: 709:         </a>
+58: 710:         <a href="#booking" onClick={() => setMobileMenuOpen(false)}>
+59: 711:           Booking
+60: 712:         </a>
+61: 713:         <a href="#clinic-tour" onClick={() => setMobileMenuOpen(false)}>
+62: 714:           Clinic Tour
+63: 715:         </a>
+64: 716:         <a href="#faq" onClick={() => setMobileMenuOpen(false)}>
+65: 717:           FAQ
+66: 718:         </a>
+67: 719:         <a href="tel:+917218818815" style={{ color: "var(--mint)", fontWeight: 700 }} onClick={() => setMobileMenuOpen(false)}>
+68: 720:           Call: +91 72188 18815
+69: The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+70: 
+The above content shows the entire, complete file contents of the requested file.

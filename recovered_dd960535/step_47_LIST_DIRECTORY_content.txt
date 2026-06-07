@@ -1,0 +1,13 @@
+Created At: 2026-06-07T17:40:13Z
+Completed At: 2026-06-07T17:40:14Z
+{"name":"Video_background_for_physiothera__202606071803-removebg-preview.png","sizeBytes":"127140"}
+{"name":"clinic_treatment.png","sizeBytes":"851810"}
+{"name":"doctor_aisha.png","sizeBytes":"653999"}
+{"name":"doctor_ben.png","sizeBytes":"687782"}
+{"name":"doctor_mara.png","sizeBytes":"666983"}
+{"name":"doctor_tomas.png","sizeBytes":"683083"}
+{"name":"hero-bg.jpeg","sizeBytes":"533769"}
+{"name":"pain-removebg-preview.png","sizeBytes":"158201"}
+{"name":"pain.jpeg","sizeBytes":"605496"}
+
+Summary: This directory contains 0 subdirectories and 9 files.

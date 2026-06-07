@@ -1,0 +1,1 @@
+I will write a python script to search `transcript.jsonl` and extract the full sections containing `#why-choose` and `#clinic-tour` without truncation, saving them to `extracted_sections.txt`.

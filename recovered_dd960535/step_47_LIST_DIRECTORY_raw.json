@@ -1,0 +1,8 @@
+{
+  "step_index": 47,
+  "source": "MODEL",
+  "type": "LIST_DIRECTORY",
+  "status": "DONE",
+  "created_at": "2026-06-07T17:40:13Z",
+  "content": "Created At: 2026-06-07T17:40:13Z\nCompleted At: 2026-06-07T17:40:14Z\n{\"name\":\"Video_background_for_physiothera__202606071803-removebg-preview.png\",\"sizeBytes\":\"127140\"}\n{\"name\":\"clinic_treatment.png\",\"sizeBytes\":\"851810\"}\n{\"name\":\"doctor_aisha.png\",\"sizeBytes\":\"653999\"}\n{\"name\":\"doctor_ben.png\",\"sizeBytes\":\"687782\"}\n{\"name\":\"doctor_mara.png\",\"sizeBytes\":\"666983\"}\n{\"name\":\"doctor_tomas.png\",\"sizeBytes\":\"683083\"}\n{\"name\":\"hero-bg.jpeg\",\"sizeBytes\":\"533769\"}\n{\"name\":\"pain-removebg-preview.png\",\"sizeBytes\":\"158201\"}\n{\"name\":\"pain.jpeg\",\"sizeBytes\":\"605496\"}\n\nSummary: This directory contains 0 subdirectories and 9 files."
+}

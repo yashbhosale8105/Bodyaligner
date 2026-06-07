@@ -1,0 +1,36 @@
+Created At: 2026-06-07T00:32:52Z
+Completed At: 2026-06-07T00:32:53Z
+The following changes were made by the multi_replace_file_content tool to: c:\Users\ASUS\OneDrive\Desktop\Bodyaligner\src\app\page.tsx. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -664,6 +664,7 @@
+           <a href="#why-choose">Why Us</a>
+           <a href="#booking">Booking</a>
+           <a href="#clinic-tour">Clinic Tour</a>
++          <a href="#contact">Location</a>
+           <a href="#faq">FAQ</a>
+         </div>
+         <div className="nav-cta">
+@@ -712,6 +712,9 @@
+         <a href="#clinic-tour" onClick={() => setMobileMenuOpen(false)}>
+           Clinic Tour
+         </a>
++        <a href="#contact" onClick={() => setMobileMenuOpen(false)}>
++          Location
++        </a>
+         <a href="#faq" onClick={() => setMobileMenuOpen(false)}>
+           FAQ
+         </a>
+@@ -780,6 +780,10 @@
+                 style={{ objectFit: "contain", filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.4))" }}
+                 priority
+               />
++            </div>
++          </div>
++        </div>
++
+         <div className="scroll-cue">
+           <span className="bar"></span>Scroll
+         </div>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

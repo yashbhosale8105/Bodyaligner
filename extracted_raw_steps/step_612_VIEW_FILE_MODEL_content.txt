@@ -1,0 +1,24 @@
+Created At: 2026-06-07T21:17:25Z
+Completed At: 2026-06-07T21:17:25Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/search_recovered.py`
+Total Lines: 16
+Total Bytes: 497
+Showing lines 1 to 16
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: import re
+2: 
+3: recovered_path = "recovered_sections.txt"
+4: 
+5: print("Searching recovered_sections.txt for why-choose...")
+6: with open(recovered_path, 'r', encoding='utf-8') as f:
+7:     content = f.read()
+8: 
+9: # Find all occurrences of why-choose
+10: for m in re.finditer(r'(why-choose|whyChoose|Why Us)', content, re.IGNORECASE):
+11:     start = max(0, m.start() - 300)
+12:     end = min(len(content), m.end() + 1500)
+13:     print(f"\n--- Occurrence at position {m.start()} ---")
+14:     print(content[start:end])
+15:     print("="*60)
+16: 
+The above content shows the entire, complete file contents of the requested file.

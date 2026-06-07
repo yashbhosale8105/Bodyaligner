@@ -1,0 +1,72 @@
+Created At: 2026-06-07T00:44:05Z
+Completed At: 2026-06-07T00:44:05Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/src/app/page.tsx`
+Total Lines: 1889
+Total Bytes: 82141
+Showing lines 1360 to 1430
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1360:                   </button>
+1361:                 </div>
+1362:               </>
+1363:             )}
+1364:           </div>
+1365:         </div>
+1366:       </section>
+1367: 
+1368:       {/* ============ CLINIC TOUR (Bento Grid) ============ */}
+1369:       <section className="section clinic-tour" id="clinic-tour">
+1370:         <div className="wrap">
+1371:           <div className="text-center" style={{ marginBottom: "50px", textAlign: "center" }}>
+1372:             <span className="eyebrow" style={{ justifyContent: "center" }}>Visit Us</span>
+1373:             <h2 className="section-title" style={{ marginTop: "12px", fontSize: "2.5rem" }}>Clinic <em>Tour</em></h2>
+1374:             <p className="lead" style={{ marginInline: "auto", marginTop: "12px" }}>A glimpse into our professional, clean, and healing environment in Pune.</p>
+1375:           </div>
+1376: 
+1377:           {/* Bento Grid Layout */}
+1378:           <div className="bento-grid">
+1379:             {/* Item 1 */}
+1380:             <div className="bento-item reveal spotlight-card" style={{ gridColumn: "span 7", height: "300px" }} onMouseMove={handleMouseMove}>
+1381:               <Image src="/assets/full_shoot.jpeg" alt="Treatment Session" fill style={{ objectFit: "cover" }} />
+1382:               <div className="bento-overlay">
+1383:                 <h4>Treatment in Action</h4>
+1384:                 <p>Hands-on care for lasting recovery.</p>
+1385:               </div>
+1386:             </div>
+1387: 
+1388:             {/* Item 2 */}
+1389:             <div className="bento-item reveal spotlight-car
+<truncated 506 bytes>
+l spotlight-card" style={{ gridColumn: "span 5", height: "260px" }} onMouseMove={handleMouseMove}>
+1399:               <Image src="/assets/lounge.jpeg" alt="Patient Lounge" fill style={{ objectFit: "cover" }} />
+1400:               <div className="bento-overlay">
+1401:                 <h4>Patient Lounge</h4>
+1402:                 <p>Relaxing waiting area for your comfort.</p>
+1403:               </div>
+1404:             </div>
+1405: 
+1406:             {/* Item 4 */}
+1407:             <div className="bento-item reveal spotlight-card" style={{ gridColumn: "span 7", height: "260px" }} onMouseMove={handleMouseMove}>
+1408:               <Image src="/assets/treatment_demo.png" alt="Treatment Demo" fill style={{ objectFit: "cover" }} />
+1409:               <div className="bento-overlay">
+1410:                 <h4>Expert Treatment</h4>
+1411:                 <p>Professional care by Dr Kunal Mahalle.</p>
+1412:               </div>
+1413:             </div>
+1414:           </div>
+1415:         </div>
+1416:       </section>
+1417: 
+1418:       {/* ============ TEAM SPECIALIST CREDENTIALS ============ */}
+1419:       <section className="section" id="team" data-screen-label="Team">
+1420:         <div className="wrap">
+1421:           <div className="sec-head">
+1422:             <div>
+1423:               <div className="eyebrow reveal">Clinic Specialist</div>
+1424:               <h2 className="reveal">Dedicated Spine Practitioner</h2>
+1425:             </div>
+1426:             <p className="lead reveal">
+1427:               See the same senior practitioner throughout your recovery, ensuring a consistent plan and direct accountability.
+1428:             </p>
+1429:           </div>
+1430:           <div className="team-grid" data-stagger="" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", maxWidth: "800px", margin: "0 auto", gap: "30px" }}>
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

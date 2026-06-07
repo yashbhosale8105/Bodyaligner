@@ -1,0 +1,22 @@
+Created At: 2026-06-07T17:40:07Z
+Completed At: 2026-06-07T17:40:07Z
+{"name":".git","isDir":true}
+{"name":".gitignore","sizeBytes":"480"}
+{"name":".next","isDir":true}
+{"name":"AGENTS.md","sizeBytes":"327"}
+{"name":"CLAUDE.md","sizeBytes":"11"}
+{"name":"README.md","sizeBytes":"1450"}
+{"name":"Video_background_for_physiothera__202606071803-removebg-preview.png","sizeBytes":"127140"}
+{"name":"backup","isDir":true}
+{"name":"eslint.config.mjs","sizeBytes":"465"}
+{"name":"next-env.d.ts","sizeBytes":"251"}
+{"name":"next.config.ts","sizeBytes":"133"}
+{"name":"node_modules","isDir":true}
+{"name":"package-lock.json","sizeBytes":"232355"}
+{"name":"package.json","sizeBytes":"472"}
+{"name":"pain-removebg-preview.png","sizeBytes":"158201"}
+{"name":"public","isDir":true}
+{"name":"src","isDir":true}
+{"name":"tsconfig.json","sizeBytes":"670"}
+
+Summary: This directory contains 6 subdirectories and 12 files.

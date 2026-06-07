@@ -1,0 +1,70 @@
+Created At: 2026-06-07T21:16:59Z
+Completed At: 2026-06-07T21:16:59Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/step_239_view_file.txt`
+Total Lines: 73
+Total Bytes: 4191
+Showing lines 1 to 73
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: Created At: 2026-06-07T00:44:05Z
+2: Completed At: 2026-06-07T00:44:05Z
+3: File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/src/app/page.tsx`
+4: Total Lines: 1889
+5: Total Bytes: 82141
+6: Showing lines 1360 to 1430
+7: The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+8: 1360:                   </button>
+9: 1361:                 </div>
+10: 1362:               </>
+11: 1363:             )}
+12: 1364:           </div>
+13: 1365:         </div>
+14: 1366:       </section>
+15: 1367: 
+16: 1368:       {/* ============ CLINIC TOUR (Bento Grid) ============ */}
+17: 1369:       <section className="section clinic-tour" id="clinic-tour">
+18: 1370:         <div className="wrap">
+19: 1371:           <div className="text-center" style={{ marginBottom: "50px", textAlign: "center" }}>
+20: 1372:             <span className="eyebrow" style={{ justifyContent: "center" }}>Visit Us</span>
+21: 1373:             <h2 className="section-title" style={{ marginTop: "12px", fontSize: "2.5rem" }}>Clinic <em>Tour</em></h2>
+22: 1374:             <p className="lead" style={{ marginInline: "auto", marginTop: "12px" }}>A glimpse into our professional, clean, and healing environment in Pune.</p>
+23: 1375:           </div>
+24: 1376: 
+25: 1377:           {/* Bento Grid Layout */}
+26: 1378:           <div className="bento-grid">
+27: 1379:             {/* Item 1 */}
+28: 1380:      
+<truncated 914 bytes>
+ame="bento-overlay">
+42: 1401:                 <h4>Patient Lounge</h4>
+43: 1402:                 <p>Relaxing waiting area for your comfort.</p>
+44: 1403:               </div>
+45: 1404:             </div>
+46: 1405: 
+47: 1406:             {/* Item 4 */}
+48: 1407:             <div className="bento-item reveal spotlight-card" style={{ gridColumn: "span 7", height: "260px" }} onMouseMove={handleMouseMove}>
+49: 1408:               <Image src="/assets/treatment_demo.png" alt="Treatment Demo" fill style={{ objectFit: "cover" }} />
+50: 1409:               <div className="bento-overlay">
+51: 1410:                 <h4>Expert Treatment</h4>
+52: 1411:                 <p>Professional care by Dr Kunal Mahalle.</p>
+53: 1412:               </div>
+54: 1413:             </div>
+55: 1414:           </div>
+56: 1415:         </div>
+57: 1416:       </section>
+58: 1417: 
+59: 1418:       {/* ============ TEAM SPECIALIST CREDENTIALS ============ */}
+60: 1419:       <section className="section" id="team" data-screen-label="Team">
+61: 1420:         <div className="wrap">
+62: 1421:           <div className="sec-head">
+63: 1422:             <div>
+64: 1423:               <div className="eyebrow reveal">Clinic Specialist</div>
+65: 1424:               <h2 className="reveal">Dedicated Spine Practitioner</h2>
+66: 1425:             </div>
+67: 1426:             <p className="lead reveal">
+68: 1427:               See the same senior practitioner throughout your recovery, ensuring a consistent plan and direct accountability.
+69: 1428:             </p>
+70: 1429:           </div>
+71: 1430:           <div className="team-grid" data-stagger="" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", maxWidth: "800px", margin: "0 auto", gap: "30px" }}>
+72: The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+73: 
+The above content shows the entire, complete file contents of the requested file.

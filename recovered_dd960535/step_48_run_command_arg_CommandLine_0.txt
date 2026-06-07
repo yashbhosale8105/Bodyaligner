@@ -1,0 +1,1 @@
+"node -e \"const fs = require('fs'); ['pain-removebg-preview.png', 'Video_background_for_physiothera__202606071803-removebg-preview.png'].forEach(f => { const b = fs.readFileSync(f); console.log(f, b.readUInt32BE(16), b.readUInt32BE(20)); })\""

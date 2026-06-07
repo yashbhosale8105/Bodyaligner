@@ -1,0 +1,46 @@
+Created At: 2026-06-07T21:17:36Z
+Completed At: 2026-06-07T21:17:36Z
+File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/extracted_sections.txt`
+Total Lines: 1497
+Total Bytes: 124886
+Showing lines 1 to 800
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: ================================================================================
+2: LINE: 216 | STEP: 218 | TYPE: CONTENT:VIEW_FILE
+3: ================================================================================
+4: Created At: 2026-06-07T00:32:40Z
+5: Completed At: 2026-06-07T00:32:41Z
+6: File Path: `file:///c:/Users/ASUS/OneDrive/Desktop/Bodyaligner/src/app/page.tsx`
+7: Total Lines: 1881
+8: Total Bytes: 81946
+9: Showing lines 660 to 720
+10: The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+11: 660:         </a>
+12: 661:         <div className="nav-links">
+13: 662:           <a href="#about">About</a>
+14: 663:           <a href="#services">Services</a>
+15: 664:           <a href="#why-choose">Why Us</a>
+16: 665:           <a href="#booking">Booking</a>
+17: 666:           <a href="#clinic-tour">Clinic Tour</a>
+18: 667:           <a href="#faq">FAQ</a>
+19: 668:         </div>
+20: 669:         <div className="nav-cta">
+21: 670:           <a href="tel:+917218818815" className="btn btn-ghost">
+22: 671:             Call Now
+23: 672:           </a>
+24: 673:           <a href="#booking" className="btn btn-accent">
+25: 674:             Book Appointment
+26: 675:           </a>
+27: 676:           <button
+28: 677:             className="nav-toggle"
+29: 678:             id="navToggle"
+30: 679:             aria-label="Menu"
+31: 680:             onClick={
+<truncated 45283 bytes>
+=====================================================================
+611: LINE: 593 | STEP: 556 | TYPE: TOOL_CALL:write_to_file:CodeContent
+612: ================================================================================
+613: "import json\n\nlog_path = r\"C:\\Users\\ASUS\\.gemini\\antigravity-ide\\brain\\5eacdc66-5dd1-4475-9595-1f94483b6a37\\.system_generated\\logs\\transcript.jsonl\"\n\nprint(\"Searching logs for section contents...\")\nwith open(log_path, 'r', encoding='utf-8') as f:\n    for line_num, line in enumerate(f, 1):\n        if \"why-choose\" in line or \"clinic-tour\" in line:\n            try:\n                data = json.loads(line)\n                step = data.get(\"step_index\")\n                stype = data.get(\"type\")\n                source = data.get(\"source\")\n                \n                # Print the line number and basic details\n                print(f\"\\n--- Line {line_num} (Step {step}, Type {stype}, Source {source}) ---\")\n                \n                # Check tool calls\n                tool_calls = data.get(\"tool_calls\", [])\n                for tc in tool_calls:\n                    args = tc.get(\"args\", {})\n                    # Look at contents\n                    for k, v in args.items():\n                        if isinstance(v, str) and (\"why-choose\" in v or \"clinic-tour\" in v):\n                            print(f\"  Tool {tc.get('name')}, Arg {k}:\")\n                            print(f\"    Length: {len(v)}\")\n                            # Check if it looks like HTML or React\n                            if \"section\" in v or \"className=\" in v or \"id=\" in v:\n                                print(v[:1000] + \"...\")\n                        elif isinstance(v, list):\n                            # It could be replacement chunks\n                            for chunk in v:\n       
+<truncated 24223 bytes>
+
+NOTE: The output was truncated because it was too long. Use a more targeted query or a smaller range to get the information you need.

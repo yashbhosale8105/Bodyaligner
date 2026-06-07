@@ -1,0 +1,4 @@
+          <a href="#booking">Booking</a>
+          <a href="#clinic-tour">Clinic Tour</a>
+          <a href="#contact">Location</a>
+          <a href="#faq">FAQ</a>

@@ -1,0 +1,60 @@
+.
+846:       {/* ============ WHY CHOOSE US ============ */}
+847:       <section className="section why-choose" id="why-choose">
+848:         <div className="wrap split">
+849:           <div className="reveal-l">
+850:             <div className="eyebrow">Why Choose Bodyaligner</div>
+851:             <h2 style={{ fontSize: "clamp(2rem,4vw,3.2rem)", marginTop: "14px" }}>Root Cause Focused Recovery</h2>
+852:             <p className="lead" style={{ marginTop: "18px", marginBottom: "30px" }}>
+853:               We don't just treat the pain; we correct the movement patterns that cause it.
+854:             </p>
+855:             
+856:             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}>
+857:               <div style={{ display: "flex", gap: "14px" }}>
+858:                 <div className="ic" style={{ flex: "0 0 46px", height: "46px", borderRadius: "12px", background: "var(--ink)", display: "grid", placeItems: "center" }}>
+859:                   <i className="fas fa-user-friends" style={{ color: "var(--mint)" }}></i>
+860:                 </div>
+861:                 <div>
+862:                   <h4 style={{ fontFamily: "var(--sans)", fontWeight: 700, fontSize: "1.05rem" }}>One-on-One Care</h4>
+863:                   <p style={{ fontSize: "0.88rem", color: "var(--ink-soft)", marginTop: "4px" }}>Personalized attention throughout your session.</p>
+864:                 </div>
+865:               </div>
+866: 
+867:               <div style={{ display: "flex", gap: "14px" }}>
+868:                 <div className="ic" style={{ flex: "0 0 46px", height:
+<truncated 992 bytes>
+  <h4 style={{ fontFamily: "var(--sans)", fontWeight: 700, fontSize: "1.05rem" }}>Modern Equipment</h4>
+883:                   <p style={{ fontSize: "0.88rem", color: "var(--ink-soft)", marginTop: "4px" }}>Using advanced chiropractic alignment tools.</p>
+884:                 </div>
+885:               </div>
+886: 
+887:               <div style={{ display: "flex", gap: "14px" }}>
+888:                 <div className="ic" style={{ flex: "0 0 46px", height: "46px", borderRadius: "12px", background: "var(--ink)", display: "grid", placeItems: "center" }}>
+889:                   <i className="fas fa-heart" style={{ color: "var(--mint)" }}></i>
+890:                 </div>
+891:                 <div>
+892:                   <h4 style={{ fontFamily: "var(--sans)", fontWeight: 700, fontSize: "1.05rem" }}>Safe Environment</h4>
+893:                   <p style={{ fontSize: "0.88rem", color: "var(--ink-soft)", marginTop: "4px" }}>Strict hygiene standards with boutique clinic setup.</p>
+894:                 </div>
+895:               </div>
+896:             </div>
+897:           </div>
+898:           
+899:           <div className="split-media reveal-r" style={{ aspectRatio: "765 / 1024" }}>
+900:             <div style={{ position: "relative", width: "100%", height: "100%" }}>
+901:               <Image
+902:                 src="/assets/clinic_interior.png"
+903:                 alt="Bodyaligner Clinic Interior"
+904:                 fill
+905:                 sizes="(max-width: 860px) 100vw, 50vw"
+906:                 style={{ objectFit: "cover" }}
+907:               />
+908:             </div>
+909:           </div>
+910:         </div>
+911:       </section>
+912: 
+913:       {/* ============ EXERCISE LIBRARY ============ */}
+914:       <section className="section exercises" id="exercises" data-screen-label="Exercises">
+915:         <div className="wrap">
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
